@@ -1,15 +1,18 @@
-(function () {
-  const github_api = 'https://api.github.com';
+(() => {
+  const github = {
+    api: 'https://api.github.com',
+    token: 'dcf74b88a1513ec5220e388b51d761055fb2c63e'
+  };
   const headers = new Headers({
-    'Authorization': 'token dcf74b88a1513ec5220e388b51d761055fb2c63e',
+    'Authorization': `token ${github.token}`,
     'Accept': 'application/vnd.github.v3+json'
   });
 
-  fetch(github_api + '/user/repos', {headers})
-    .then(function (result) {
+  fetch(`${github.api}/user/repos`, {headers})
+    .then(result => {
       return result.json();
     })
-    .then(function (json) {
+    .then(json => {
       console.log(json);
     });
 })();
