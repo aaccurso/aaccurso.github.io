@@ -10,5 +10,14 @@
 
   fetch(`${github.api}/user/repos`, {headers})
     .then(result => result.json())
-    .then(json => console.log(json));
+    .then(repos => {
+      let githubRepos = document.querySelector('github-repos');
+      githubRepos.innerHTML = Handlebars.compile(`
+        <ul>
+        {{#each repos}}
+          <li><a href="{{url}}">{{name}}</a></li>
+        {{/each}}
+        </ul>
+      `)({repos});
+    });
 })();
