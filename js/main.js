@@ -9,10 +9,6 @@
   });
 
   fetch(`${github.api}/user/repos`, {headers})
-    .then(result => {
-      return result.json();
-    })
-    .then(json => {
-      console.log(json);
-    });
+    .then(result => result.json())
+    .then(json => console.log(json));
 })();
