@@ -1,7 +1,7 @@
 (mvvm => {
 	mvvm.component.register('github-repos', {
-		init (GithubRepos) {
-			return GithubRepos().then(repos => {
+		init (Github) {
+			return Github.repos().then(repos => {
 				return {repos};
 			});
 		},

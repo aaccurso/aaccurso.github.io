@@ -1,8 +1,8 @@
 (mvvm => {
 	mvvm.service = {
 		services: new Map(),
-		register (serviceName, serviceObject) {
-			this.services.set(serviceName, serviceObject);
+		register (serviceName, serviceFunction) {
+			this.services.set(serviceName, serviceFunction());
 		},
 		getDependencies (componentInit) {
 			let dependencyNames = getParamNames(componentInit);
