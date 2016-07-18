@@ -1,6 +1,6 @@
-import mvvm from '../mvvm/mvvm';
+import { component } from '../mvvm/mvvm';
 
-mvvm.component.register('github-repos', {
+component.register('github-repos', {
 	init (Github) {
 		return Github.repos().then(repos => {
 			return {repos};

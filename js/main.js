@@ -48,15 +48,11 @@
 
 	var _mvvm = __webpack_require__(1);
 
-	var _mvvm2 = _interopRequireDefault(_mvvm);
-
 	__webpack_require__(4);
 
 	__webpack_require__(5);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	_mvvm2.default.bootstrap();
+	(0, _mvvm.bootstrap)();
 
 /***/ },
 /* 1 */
@@ -67,6 +63,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
+	exports.bootstrap = exports.component = exports.service = undefined;
 
 	var _service = __webpack_require__(2);
 
@@ -78,13 +75,13 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = {
-		component: _component2.default,
-		service: _service2.default,
-		bootstrap: function bootstrap() {
-			this.component.bootstrap();
-		}
-	};
+	function bootstrap() {
+		_component2.default.bootstrap();
+	}
+
+	exports.service = _service2.default;
+	exports.component = _component2.default;
+	exports.bootstrap = bootstrap;
 
 /***/ },
 /* 2 */
@@ -192,11 +189,7 @@
 
 	var _mvvm = __webpack_require__(1);
 
-	var _mvvm2 = _interopRequireDefault(_mvvm);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	_mvvm2.default.service.register('Github', function () {
+	_mvvm.service.register('Github', function () {
 		var github = {
 			api: 'https://api.github.com',
 			token: 'dcf74b88a1513ec5220e388b51d761055fb2c63e'
@@ -222,11 +215,7 @@
 
 	var _mvvm = __webpack_require__(1);
 
-	var _mvvm2 = _interopRequireDefault(_mvvm);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	_mvvm2.default.component.register('github-repos', {
+	_mvvm.component.register('github-repos', {
 		init: function init(Github) {
 			return Github.repos().then(function (repos) {
 				return { repos: repos };

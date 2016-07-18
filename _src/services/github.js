@@ -1,6 +1,6 @@
-import mvvm from '../mvvm/mvvm';
+import { service } from '../mvvm/mvvm';
 
-mvvm.service.register('Github', () => {
+service.register('Github', () => {
 	const github = {
 		api: 'https://api.github.com',
 		token: 'dcf74b88a1513ec5220e388b51d761055fb2c63e'

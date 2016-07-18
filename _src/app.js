@@ -1,5 +1,5 @@
-import mvvm from './mvvm/mvvm';
+import { bootstrap } from './mvvm/mvvm';
 import './services/github';
 import './components/github-repos';
 
-mvvm.bootstrap();
+bootstrap();

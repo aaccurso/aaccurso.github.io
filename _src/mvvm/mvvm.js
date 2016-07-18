@@ -1,10 +1,12 @@
 import service from './service';
 import component from './component';
 
-export default {
-	component,
+function bootstrap() {
+	component.bootstrap();
+}
+
+export {
 	service,
-	bootstrap () {
-		this.component.bootstrap();
-	}
+	component,
+	bootstrap
 };
