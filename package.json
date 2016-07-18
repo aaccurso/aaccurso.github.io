@@ -2,12 +2,11 @@
   "name": "aaccurso.github.io",
   "version": "1.0.0",
   "description": "Everything you need to know about me.",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aaccurso/aaccurso.github.io.git"
   },
-  "author": "",
+  "author": "aaccurso",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aaccurso/aaccurso.github.io/issues"
@@ -15,6 +14,9 @@
   "homepage": "https://github.com/aaccurso/aaccurso.github.io#readme",
   "scripts": {
     "build": "webpack"
+  },
+  "dependencies": {
+  	"rockyjs": "1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",

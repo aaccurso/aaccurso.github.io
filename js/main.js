@@ -46,13 +46,13 @@
 
 	'use strict';
 
-	var _mvvm = __webpack_require__(1);
+	var _rockyjs = __webpack_require__(1);
 
 	__webpack_require__(4);
 
 	__webpack_require__(5);
 
-	(0, _mvvm.bootstrap)();
+	(0, _rockyjs.bootstrap)();
 
 /***/ },
 /* 1 */
@@ -187,9 +187,9 @@
 
 	'use strict';
 
-	var _mvvm = __webpack_require__(1);
+	var _rockyjs = __webpack_require__(1);
 
-	_mvvm.service.register('Github', function () {
+	_rockyjs.service.register('Github', function () {
 		var github = {
 			api: 'https://api.github.com',
 			token: 'dcf74b88a1513ec5220e388b51d761055fb2c63e'
@@ -213,9 +213,9 @@
 
 	'use strict';
 
-	var _mvvm = __webpack_require__(1);
+	var _rockyjs = __webpack_require__(1);
 
-	_mvvm.component.register('github-repos', {
+	_rockyjs.component.register('github-repos', {
 		init: function init(Github) {
 			return Github.repos().then(function (repos) {
 				return { repos: repos };

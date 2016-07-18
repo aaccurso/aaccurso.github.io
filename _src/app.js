@@ -1,4 +1,4 @@
-import { bootstrap } from './mvvm/mvvm';
+import { bootstrap } from 'rockyjs';
 import './services/github';
 import './components/github-repos';
 

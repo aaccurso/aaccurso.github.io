@@ -1,4 +1,4 @@
-import { service } from '../mvvm/mvvm';
+import { service } from 'rockyjs';
 
 service.register('Github', () => {
 	const github = {

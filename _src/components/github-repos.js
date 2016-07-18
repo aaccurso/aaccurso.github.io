@@ -1,4 +1,4 @@
-import { component } from '../mvvm/mvvm';
+import { component } from 'rockyjs';
 
 component.register('github-repos', {
 	init (Github) {
