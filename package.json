@@ -14,7 +14,8 @@
   "homepage": "https://github.com/aaccurso/aaccurso.github.io#readme",
   "scripts": {
     "build": "WEBPACK_ENV=build webpack",
-    "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch"
+    "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch",
+    "jekyll": "bundle exec jekyll serve"
   },
   "dependencies": {
     "rockyjs": "1.0.0"
