@@ -15,7 +15,7 @@
   "scripts": {
     "build": "WEBPACK_ENV=build webpack",
     "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch",
-    "jekyll": "bundle exec jekyll serve"
+    "jekyll": "bundle exec jekyll serve --config _config.yml,_config.dev.yml"
   },
   "dependencies": {
     "rockyjs": "1.0.0"
