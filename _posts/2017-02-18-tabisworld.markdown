@@ -11,9 +11,9 @@ categories: project gaming
 
 Today I felt like writing about one of my greatest professional experiences.
 
-It all started one day the CEO of the company closed a deal on a project that consisted of building 10 mobile games for kids in 3 months. Yeah, just 3 months! It was really challenging considering that the company didn't have experience in game development whatsoever. With time the client understood that building games takes time and the timeline was adjusted.
+It all started one day when the CEO of the company I was working on had closed a deal on a project that consisted of building 10 mobile games for kids in 3 months. Yeah, just 3 months! It was really challenging considering that the company didn't have experience in game development whatsoever.
 
-So it turns out that the CEO chose me to be the technical leader of the project. I remember I was finishing a small project at the moment so I was going to be free a few weeks before the new project started, which was really convenient. And my previous leadership on a fullstack project went pretty well so I guess he thought it was worth it to give me a chance at something bigger.
+So it turns out that the CEO chose me to be the technical leader of the project. I remember I was finishing a small project at the moment so I was going to be free a few weeks before the new project started, which was really convenient. And my previous leadership on a fullstack project went pretty well so he thought it was time to give me a chance at something bigger.
 
 ## Meet TABI
 
@@ -25,7 +25,7 @@ So the idea was to start selling this tablets to kindergartens so the teachers c
 
 ## The Team
 
-Creating a game from scratch is no easy matter, but we didn't know that at the beginning. We started off as a team of 2 developers, and this team was responsible of getting requirements from the client, designing the game, managing the people involved and, of course, develop the game.
+Creating a game from scratch is no easy matter, but we didn't know that in the beginning. We started off as a team of 2 developers, and this team was responsible of getting requirements from the client, designing the game, managing the people involved and, of course, develop the game.
 
 Also there was a team of 2 teachers plus the project director, the director assistant and the design team, all of which were employed by the client.
 
@@ -47,11 +47,11 @@ And the great thing about all of this was that we learned to do it along the way
 
 At the moment I knew that the technologies we were going to choose for the first couple of games would probably determine the stack for the rest of the games. And it was both a short term and a long term decision, since more games had to be built in the future months.
 
-Since we had an approximate vision of the type of games we were going to build, we already knew we needed a 2D engine. I decided to lean on the Javascript path because my team had a lot of experience with the technologies associated and also my last mobile project was built with [Cordova][cordova], and it was a success considering the tight timeline we had.
+Since we had an approximate vision of the type of games we were going to build, we already knew we needed a 2D engine. I decided to lean on the Javascript path because my team had a lot of experience with the technologies associated and also my last mobile project was built with [Cordova], and it was a success considering the tight timeline we had.
 
 So I queried the almighty Google for the magic words: 'HTML5 2D game engine'. And I got as a result a lot of Javascript frameworks: Create.js, PIXI.js, Panda.js [...][html5-engines] and _Phaser.js_.
 
-I tried most of them and [Phaser][phaser] was one of the most opinionated, well documented and game oriented frameworks out there. And I was looking for an opinionated proven way of building games because we didn't have the knowledge, neither the time to acquire the knowledge, to build or use a more complex game engine.
+I tried most of them and [Phaser] was one of the most opinionated, well documented and game oriented frameworks out there. And I was looking for an opinionated proven way of building games because we didn't have the knowledge, neither the time to acquire the knowledge, to build or use a more complex game engine.
 
 And luckily it turned out really good.
 
@@ -59,11 +59,11 @@ And luckily it turned out really good.
 
 ## The First Batch of Games
 
-* [Sort & Recycle][sort-and-recycle]
-* [Avatars Factory][avatars-factory]
-* [Scribbles][scribbles]
-* [My First Words][my-first-words]
-* [Water Lab][water-lab]
+* [Sort & Recycle] ![Sort & Recycle](/assets/tabisworld/game-icons/sort-and-recycle.png){: .icon}
+* [Avatars Factory] ![Avatars Factory](/assets/tabisworld/game-icons/avatars-factory.png){: .icon}
+* [Scribbles] ![Scribbles](/assets/tabisworld/game-icons/scribbles.png){: .icon}
+* [My First Words] ![My First Words](/assets/tabisworld/game-icons/my-first-words.png){: .icon}
+* [Water Lab] ![The Water Cycle](/assets/tabisworld/game-icons/the-water-cycle.png){: .icon} ![Crazy Drop](/assets/tabisworld/game-icons/crazy-drop.png){: .icon} ![Does it float?](/assets/tabisworld/game-icons/does-it-float.png){: .icon}
 
 ## The New Technologies
 
@@ -73,7 +73,7 @@ And let me be honest, HTML5 was good and all but I still felt the quality of the
 
 Turns out we were finishing the game design phase for a new game and the client was on the verge of approving it when the good news came. A new designer would join the client's design team, and he had experience designing mobile games. Up until now we were working with web designers, so having a game art designer in the team was a game changer for improving overall quality.
 
-I felt we could take advantage of this new addition to the team by starting to build the upcoming games with a more robust cutting-edge technology. One of the guys in the team had been trying out [Unity][unity] in the past and he was very confident he could start the new game with it. So between him and I we learned Unity and started to build the game with it.
+I felt we could take advantage of this new addition to the team by starting to build the upcoming games with a more robust cutting-edge technology. One of the guys in the team had been trying out [Unity] in the past and he was very confident he could start the new game with it. So between him and I we learned Unity and started to build the game with it.
 
 And it paid off.
 
@@ -81,25 +81,25 @@ And it paid off.
 
 ## The Second Batch of Games
 
-* [Car Magnets][car-magnets]
-* [Green Shelter][green-shelter]
+* [Car Magnets] ![Car Magnets](/assets/tabisworld/game-icons/car-magnets.png){: .icon}
+* [Green Shelter] ![Green Shelter](/assets/tabisworld/game-icons/green-shelter.png){: .icon}
 * My First Calendar
-* Playing with Energy
-* Peace Chain
+* Playing with Energy ![Playing with Energy](/assets/tabisworld/game-icons/playing-with-energies.png){: .icon}
+* Peace Chain ![Peace Chain](/assets/tabisworld/game-icons/peace-chain.png){: .icon}
 
 [tabisworld]: http://www.tabisworld.com/
 [html5-engines]: https://html5gameengine.com/tag/2d
-[cordova]: https://cordova.apache.org/
-[phaser]: http://phaser.io/
+[Cordova]: https://cordova.apache.org/
+[Phaser]: http://phaser.io/
 [mobile-performance]: http://www.html5gamedevs.com/topic/14036-how-to-improve-performance-on-mobile/
 [phaser-for-tabi]: {{ site.baseurl }}{% post_url 2017-02-18-phaser-for-tabi %}
-[unity]: https://unity3d.com/
+[Unity]: https://unity3d.com/
 [unity-for-tabi]: {{ site.baseurl }}{% post_url 2017-02-18-unity-for-tabi %}
 
-[sort-and-recycle]: http://eurocase.com/clasifica-y-recicla-app-educativa-tabi
-[avatars-factory]: http://eurocase.com/nueva-app-Tabi-fabrica-de-avatares
-[scribbles]: http://eurocase.com/nueva-app-Tabi-grafismos-con-boni
-[my-first-words]: http://eurocase.com/press/detail/83
-[water-lab]: http://eurocase.com/tabi-apps-para-pequenios-cientificos
-[car-magnets]: http://eurocase.com/press/detail/80
-[green-shelter]: http://eurocase.com/press/detail/86
+[Sort & Recycle]: http://eurocase.com/clasifica-y-recicla-app-educativa-tabi
+[Avatars Factory]: http://eurocase.com/nueva-app-Tabi-fabrica-de-avatares
+[Scribbles]: http://eurocase.com/nueva-app-Tabi-grafismos-con-boni
+[My First Words]: http://eurocase.com/press/detail/83
+[Water Lab]: http://eurocase.com/tabi-apps-para-pequenios-cientificos
+[Car Magnets]: http://eurocase.com/press/detail/80
+[Green Shelter]: http://eurocase.com/press/detail/86
