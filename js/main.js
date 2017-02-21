@@ -52,6 +52,8 @@
 
 	__webpack_require__(5);
 
+	__webpack_require__(6);
+
 	(0, _rockyjs.bootstrap)();
 
 /***/ },
@@ -101,6 +103,7 @@
 	    var _this = this;
 
 	    var dependencyNames = getParamNames(componentInit);
+
 	    return dependencyNames.map(function (dependencyName) {
 	      return _this.services.get(dependencyName);
 	    });
@@ -114,6 +117,7 @@
 	function getParamNames(func) {
 	  var fnStr = func.toString().replace(STRIP_COMMENTS, '');
 	  var result = fnStr.slice(fnStr.indexOf('(') + 1, fnStr.indexOf(')')).match(ARGUMENT_NAMES);
+
 	  return result || [];
 	}
 	module.exports = exports['default'];
@@ -153,10 +157,19 @@
 	        componentName = _step$value[0];
 	        componentObject = _step$value[1];
 
-	        var componentDOM = document.querySelector(componentName);
+	        var componentDOMElements = document.querySelectorAll(componentName);
 	        var dependencies = _service2.default.getDependencies(componentObject.init);
-	        componentObject.init.apply(componentObject, dependencies).then(function (scope) {
-	          componentDOM.innerHTML = Handlebars.compile(componentObject.template)(scope);
+
+	        componentDOMElements.forEach(function (componentDOMElement) {
+	          var properties = {
+	            element: componentDOMElement,
+	            attributes: componentDOMElement.attributes
+	          };
+	          var componentObjectInstance = Object.assign({}, properties, componentObject);
+
+	          componentObjectInstance.init.apply(componentObjectInstance, dependencies).then(function (scope) {
+	            componentDOMElement.innerHTML = Handlebars.compile(componentObjectInstance.template)(scope);
+	          });
 	        });
 	      };
 
@@ -194,17 +207,23 @@
 	_rockyjs.service.register('Github', function () {
 	  var github = {
 	    api: 'https://api.github.com',
+	    user: 'aaccurso',
 	    token: 'dcf74b88a1513ec5220e388b51d761055fb2c63e'
 	  };
 	  var headers = new Headers({
 	    'Authorization': 'token ' + github.token,
 	    'Accept': 'application/vnd.github.v3+json'
 	  });
+	  var toJson = function toJson(result) {
+	    return result.json();
+	  };
+
 	  return {
 	    repos: function repos() {
-	      return fetch(github.api + '/user/repos', { headers: headers }).then(function (result) {
-	        return result.json();
-	      });
+	      return fetch(github.api + '/user/repos', { headers: headers }).then(toJson);
+	    },
+	    repo: function repo(name) {
+	      return fetch(github.api + '/repos/' + github.user + '/' + name, { headers: headers }).then(toJson);
 	    }
 	  };
 	});
@@ -217,7 +236,7 @@
 
 	var _rockyjs = __webpack_require__(1);
 
-	_rockyjs.component.register('github-repos', {
+	_rockyjs.component.register('github-repo-list', {
 	  init: function init(Github) {
 	    return Github.repos().then(function (repos) {
 	      return { repos: repos };
@@ -225,6 +244,26 @@
 	  },
 
 	  template: '\n    <ul>\n    {{#each repos}}\n      <li><a href="{{url}}">{{name}}</a></li>\n    {{/each}}\n    </ul>\n  '
+	});
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _rockyjs = __webpack_require__(1);
+
+	_rockyjs.component.register('github-repo-card', {
+	  init: function init(Github) {
+	    var name = this.attributes.getNamedItem('name').value;
+
+	    return Github.repo(name).then(function (repo) {
+	      return { repo: repo };
+	    });
+	  },
+
+	  template: '\n    <div>\n      {{repo.name}}\n      Stars: {{repo.stargazers_count}}\n      Forks: {{repo.forks_count}}\n    </div>\n  '
 	});
 
 /***/ }
