@@ -7,6 +7,9 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://aaccurso.github.io" # the base hostname & protocol for your site
 twitter_username: aaaccurso
 github_username:  aaccurso
+exclude:
+  - node_modules
+  - _src
 
 # Build settings
 markdown: kramdown
