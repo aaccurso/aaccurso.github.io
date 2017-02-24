@@ -55,7 +55,7 @@ I tried most of them and [Phaser] was one of the most opinionated, well document
 
 And luckily it turned out really good.
 
-> You can learn more about the full stack of technologies [here][phaser-for-tabi].
+> You can learn more about the full stack of technologies and architecture [here][phaser-for-tabi].
 
 ## The First Batch of Games
 
@@ -64,6 +64,8 @@ And luckily it turned out really good.
 * [Scribbles] ![Scribbles](/assets/tabisworld/game-icons/scribbles.png){: .icon}
 * [My First Words] ![My First Words](/assets/tabisworld/game-icons/my-first-words.png){: .icon}
 * [Water Lab] ![The Water Cycle](/assets/tabisworld/game-icons/the-water-cycle.png){: .icon} ![Crazy Drop](/assets/tabisworld/game-icons/crazy-drop.png){: .icon} ![Does it float?](/assets/tabisworld/game-icons/does-it-float.png){: .icon}
+
+> TODO: learn more of the first batch
 
 ## The New Technologies
 
@@ -83,9 +85,23 @@ And it paid off.
 
 * [Car Magnets] ![Car Magnets](/assets/tabisworld/game-icons/car-magnets.png){: .icon}
 * [Green Shelter] ![Green Shelter](/assets/tabisworld/game-icons/green-shelter.png){: .icon}
-* My First Calendar
+* My First Calendar ![My First Calendar](/assets/tabisworld/game-icons/my-first-calendar.png){: .icon}
 * Playing with Energy ![Playing with Energy](/assets/tabisworld/game-icons/playing-with-energies.png){: .icon}
 * Peace Chain ![Peace Chain](/assets/tabisworld/game-icons/peace-chain.png){: .icon}
+
+> TODO: learn more of the second batch
+
+## The Platform
+
+Web Application. Dashboard. Collect game data. Group, map and reduce data. Communication between teachers and parents. Realtime notifications.
+
+> You can learn more about the project, technologies and architecture [here][tabi-platform].
+
+## Conclusion
+
+Enjoyment. Education. Challenging. Communication.
+
+Thanks for reading :)
 
 [tabisworld]: http://www.tabisworld.com/
 [html5-engines]: https://html5gameengine.com/tag/2d
@@ -95,6 +111,7 @@ And it paid off.
 [phaser-for-tabi]: {{ site.baseurl }}{% post_url 2017-02-18-phaser-for-tabi %}
 [Unity]: https://unity3d.com/
 [unity-for-tabi]: {{ site.baseurl }}{% post_url 2017-02-18-unity-for-tabi %}
+[tabi-platform]: {{ site.baseurl }}{% post_url 2017-02-18-tabi-platform %}
 
 [Sort & Recycle]: http://eurocase.com/clasifica-y-recicla-app-educativa-tabi
 [Avatars Factory]: http://eurocase.com/nueva-app-Tabi-fabrica-de-avatares
