@@ -1,5 +1,6 @@
 import { component } from 'rockyjs';
 import { load as loadEmoji, parse as parseEmoji } from 'gh-emoji'
+import Autolinker from 'autolinker';
 
 component.register('github-repo-card', {
   init (Github) {
@@ -10,7 +11,11 @@ component.register('github-repo-card', {
         loadEmoji()
       ])
       .then(([repo]) => {
-        repo.description = parseEmoji(repo.description);
+        const linkedDescription = Autolinker.link(repo.description);
+        const emojiDescription = parseEmoji(linkedDescription);
+
+        repo.description = emojiDescription;
+
         return {
           repo,
           owner: repo.owner

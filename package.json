@@ -18,6 +18,7 @@
     "jekyll": "bundle exec jekyll serve --config _config.yml,_config.dev.yml"
   },
   "dependencies": {
+    "autolinker": "^1.4.1",
     "gh-emoji": "^0.2.5",
     "rockyjs": "1.0.0"
   },
