@@ -63,11 +63,14 @@ And luckily it turned out really good.
 
 ## The First Batch of Games
 
-* [Sort & Recycle] ![Sort & Recycle](/assets/tabisworld/game-icons/sort-and-recycle.png){: .icon}
-* [Avatars Factory] ![Avatars Factory](/assets/tabisworld/game-icons/avatars-factory.png){: .icon}
-* [Scribbles] ![Scribbles](/assets/tabisworld/game-icons/scribbles.png){: .icon}
-* [My First Words] ![My First Words](/assets/tabisworld/game-icons/my-first-words.png){: .icon}
-* [Water Lab] ![The Water Cycle](/assets/tabisworld/game-icons/the-water-cycle.png){: .icon} ![Crazy Drop](/assets/tabisworld/game-icons/crazy-drop.png){: .icon} ![Does it float?](/assets/tabisworld/game-icons/does-it-float.png){: .icon}
+* [Sort & Recycle] ![Sort & Recycle](/assets/tabisworld/game-icons/sort-and-recycle.png){: .icon} — simple drag and drop mechanics for sorting the residues into the correct bin and catch the residues mini games.
+* [Avatars Factory] ![Avatars Factory](/assets/tabisworld/game-icons/avatars-factory.png){: .icon} — drawer game to generate funny avatars that can speak out loud anything you want.
+* [Scribbles] ![Scribbles](/assets/tabisworld/game-icons/scribbles.png){: .icon} — drawing game that teaches how to write letters and numbers.
+* [My First Words] ![My First Words](/assets/tabisworld/game-icons/my-first-words.png){: .icon} — typewriter game to write letters, articles and create photo albums.
+* [Water Lab] — which consists of 3 mini games:
+  1. [Hydrologic Cycle] ![Hydrologic Cycle](/assets/tabisworld/game-icons/the-water-cycle.png){: .icon} — simple drag and drop mechanics and device movement to explain each phase of the hydrologic cycle.
+  2. [Crazy Drop] ![Crazy Drop](/assets/tabisworld/game-icons/crazy-drop.png){: .icon} — runner game to change the state of a water drop between liquid, solid and gas to overcome obstacles.
+  3. [Does it float?] ![Does it float?](/assets/tabisworld/game-icons/does-it-float.png){: .icon} — slide to cut a rope attached to a buoy and an objects that can float or not.
 
 ## The New Technologies
 
@@ -85,11 +88,11 @@ And it paid off.
 
 ## The Second Batch of Games
 
-* [Car Magnets] ![Car Magnets](/assets/tabisworld/game-icons/car-magnets.png){: .icon}
-* [Green Shelter] ![Green Shelter](/assets/tabisworld/game-icons/green-shelter.png){: .icon}
-* My First Calendar ![My First Calendar](/assets/tabisworld/game-icons/my-first-calendar.png){: .icon}
-* Playing with Energy ![Playing with Energy](/assets/tabisworld/game-icons/playing-with-energies.png){: .icon}
-* Peace Chain ![Peace Chain](/assets/tabisworld/game-icons/peace-chain.png){: .icon}
+* [Car Magnets] ![Car Magnets](/assets/tabisworld/game-icons/car-magnets.png){: .icon} — drag possitive or negative magnets to move a magnetized toy car through a racing track.
+* [Green Shelter] ![Green Shelter](/assets/tabisworld/game-icons/green-shelter.png){: .icon} — kind of tamagotchi for plants with quick minigames to resist plagues.
+* [My Little Agenda] ![My Little Agenda](/assets/tabisworld/game-icons/my-first-calendar.png){: .icon} — simple agenda for toddlers with fun minigames (like a jumper) to teach the concept of time.
+* [Play with Energies] ![Play with Energies](/assets/tabisworld/game-icons/playing-with-energies.png){: .icon} — fun minigames involving device movement to explain different renewable energies.
+* [Peace Chain] ![Peace Chain](/assets/tabisworld/game-icons/peace-chain.png){: .icon} — snake-like game for collecting people of different ethnicities to foster peace.
 
 ## The End
 
@@ -115,10 +118,22 @@ Thanks for reading :)
 [unity-for-tabi]: {{ site.baseurl }}{% post_url 2017-02-18-unity-for-tabi %}
 [tabi-platform]: {{ site.baseurl }}{% post_url 2017-02-18-tabi-platform %}
 
-[Sort & Recycle]: http://eurocase.com/clasifica-y-recicla-app-educativa-tabi
-[Avatars Factory]: http://eurocase.com/nueva-app-Tabi-fabrica-de-avatares
-[Scribbles]: http://eurocase.com/nueva-app-Tabi-grafismos-con-boni
-[My First Words]: http://eurocase.com/press/detail/83
+[Sort & Recycle post]: http://eurocase.com/clasifica-y-recicla-app-educativa-tabi
+[Sort & Recycle]: https://play.google.com/store/apps/details?id=com.eurocase.reciclaje01
+[Avatars Factory post]: http://eurocase.com/nueva-app-Tabi-fabrica-de-avatares
+[Avatars Factory]: https://play.google.com/store/apps/details?id=com.eurocase.avatares01
+[Scribbles post]: http://eurocase.com/nueva-app-Tabi-grafismos-con-boni
+[Scribbles]: https://play.google.com/store/apps/details?id=com.eurocase.grafismos01
+[My First Words post]: http://eurocase.com/press/detail/83
+[My First Words]: https://play.google.com/store/apps/details?id=com.eurocase.textos01
 [Water Lab]: http://eurocase.com/tabi-apps-para-pequenios-cientificos
-[Car Magnets]: http://eurocase.com/press/detail/80
-[Green Shelter]: http://eurocase.com/press/detail/86
+[Hydrologic Cycle]: https://play.google.com/store/apps/details?id=com.eurocase.hydrologic_cycle
+[Crazy Drop]: https://play.google.com/store/apps/details?id=com.eurocase.states_change
+[Does it float?]: https://play.google.com/store/apps/details?id=com.eurocase.buoyancy
+[Car Magnets post]: http://eurocase.com/press/detail/80
+[Car Magnets]: https://play.google.com/store/apps/details?id=com.eurocase.Laboratorio02
+[Green Shelter post]: http://eurocase.com/press/detail/86
+[Green Shelter]: https://play.google.com/store/apps/details?id=com.eurocase.greenshelter
+[My Little Agenda]: https://play.google.com/store/apps/details?id=com.eurocase.tabimylittleagenda
+[Play With Energies]: https://play.google.com/store/apps/details?id=com.eurocase.playwithenergies
+[Peace Chain]: https://play.google.com/store/apps/details?id=com.eurocase.peacechain
