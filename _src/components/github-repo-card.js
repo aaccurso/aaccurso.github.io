@@ -23,18 +23,19 @@ component.register('github-repo-card', {
       });
   },
   template: `
-    <div>
-      <p>
-        {{repo.name}}
-        Stars: {{repo.stargazers_count}}
-        Forks: {{repo.forks_count}}
-        Language: {{repo.language}}
-        Description: {{{repo.description}}}
-        Owner:
-        - {{owner.login}}
-        - {{owner.html_url}}
+    <div class="github-repo-card">
+      <div class="owner-avatar">
+        <a href="{{owner.html_url}}">
         <img src="{{owner.avatar_url}}" alt="{{owner.login}}"/>
-      </p>
+        </a>
+      </div>
+      <div class="repo-details">
+        <div class="repo-name">
+          <a href="{{repo.html_url}}">{{repo.name}}</a>
+          <span class="repo-language" title="Main Language">{{repo.language}}</span>
+        </div>
+        <p class="repo-description">{{{repo.description}}}</p>
+      </div>
     </div>
   `
 });

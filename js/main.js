@@ -362,7 +362,7 @@
 	      });
 	    },
 
-	    template: '\n    <div>\n      <p>\n        {{repo.name}}\n        Stars: {{repo.stargazers_count}}\n        Forks: {{repo.forks_count}}\n        Language: {{repo.language}}\n        Description: {{{repo.description}}}\n        Owner:\n        - {{owner.login}}\n        - {{owner.html_url}}\n        <img src="{{owner.avatar_url}}" alt="{{owner.login}}"/>\n      </p>\n    </div>\n  '
+	    template: '\n    <div class="github-repo-card">\n      <div class="owner-avatar">\n        <a href="{{owner.html_url}}">\n        <img src="{{owner.avatar_url}}" alt="{{owner.login}}"/>\n        </a>\n      </div>\n      <div class="repo-details">\n        <div class="repo-name">\n          <a href="{{repo.html_url}}">{{repo.name}}</a>\n          <span class="repo-language" title="Main Language">{{repo.language}}</span>\n        </div>\n        <p class="repo-description">{{{repo.description}}}</p>\n      </div>\n    </div>\n  '
 	  });
 	});
 
