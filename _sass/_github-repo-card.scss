@@ -3,10 +3,11 @@ $border-color: darkgrey;
 
 .github-repo-card {
   padding: $gutter;
-  border: 1px solid $border-color;
+  border: 1px solid transparent;
   border-radius: $gutter / 2;
   max-width: 400px;
   margin-bottom: $gutter;
+  box-shadow: $border-color 1px 1px 3px;
 
   .owner-avatar {
     vertical-align: top;
@@ -15,6 +16,7 @@ $border-color: darkgrey;
     width: calc(15% - #{$gutter});
 
     img {
+      border-radius: 3px;
       width: 100%;
     }
   }
