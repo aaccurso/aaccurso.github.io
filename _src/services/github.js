@@ -17,8 +17,8 @@ service.register('Github', () => {
       return fetch(`${github.api}/user/repos`, {headers})
         .then(toJson);
     },
-    repo (name) {
-      return fetch(`${github.api}/repos/${github.user}/${name}`, {headers})
+    repo (name, owner) {
+      return fetch(`${github.api}/repos/${owner || github.user}/${name}`, {headers})
         .then(toJson)
     }
   };

@@ -5,7 +5,7 @@ $border-color: darkgrey;
   padding: $gutter;
   border: 1px solid transparent;
   border-radius: $gutter / 2;
-  max-width: 400px;
+  max-width: 500px;
   margin-bottom: $gutter;
   box-shadow: $border-color 1px 1px 3px;
 
@@ -27,6 +27,7 @@ $border-color: darkgrey;
     width: calc(85% - #{$gutter});
     border-left: 1px solid $border-color;
     padding-left: 5px;
+    min-height: 65px;
 
     .repo-name {
       font-weight: bold;

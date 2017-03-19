@@ -239,8 +239,8 @@
 	      repos: function repos() {
 	        return fetch(github.api + '/user/repos', { headers: headers }).then(toJson);
 	      },
-	      repo: function repo(name) {
-	        return fetch(github.api + '/repos/' + github.user + '/' + name, { headers: headers }).then(toJson);
+	      repo: function repo(name, owner) {
+	        return fetch(github.api + '/repos/' + (owner || github.user) + '/' + name, { headers: headers }).then(toJson);
 	      }
 	    };
 	  });
@@ -343,9 +343,10 @@
 
 	  _rockyjs.component.register('github-repo-card', {
 	    init: function init(Github) {
-	      var name = this.attributes.getNamedItem('name').value;
+	      var name = this.attributes.getNamedItem('name');
+	      var owner = this.attributes.getNamedItem('owner');
 
-	      return Promise.all([Github.repo(name), (0, _ghEmoji.load)()]).then(function (_ref) {
+	      return Promise.all([Github.repo(name.value, owner && owner.value), (0, _ghEmoji.load)()]).then(function (_ref) {
 	        var _ref2 = _slicedToArray(_ref, 1);
 
 	        var repo = _ref2[0];

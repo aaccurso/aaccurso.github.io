@@ -4,10 +4,11 @@ import Autolinker from 'autolinker';
 
 component.register('github-repo-card', {
   init (Github) {
-    const name = this.attributes.getNamedItem('name').value;
+    const name = this.attributes.getNamedItem('name');
+    const owner = this.attributes.getNamedItem('owner');
 
     return Promise.all([
-        Github.repo(name),
+        Github.repo(name.value, owner && owner.value),
         loadEmoji()
       ])
       .then(([repo]) => {

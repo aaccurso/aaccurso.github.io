@@ -19,9 +19,40 @@ This was awesome because it provided the necessary structure for the team to be 
 
 ## Mobile
 
-After finishing the tutorial, the first complex challenge we had to overcome was to bundle the app into an `apk` that could be installed in the TABIs, which had an **x86 processor** (as opposed to the more popular ARM architecture).
+### Crosswalk
 
-While investigating how to do that I came across Crosswalk, a tool that generates an apk by wrapping the web application in an updated WebView and let's you choose the architecture to build for.
+After finishing the tutorial, the first complex challenge we had to overcome was to bundle the app into an Android `apk` that could be installed in the TABIs, which had an **x86 processor** (as opposed to the more popular ARM architecture).
+
+While investigating how to do that I came across [Crosswalk](https://crosswalk-project.org), a tool that generates an `apk` by wrapping the web application in an updated WebView and let's you choose the architecture to build for.
+
+Crosswalk provides a way to keep up with the latest features released in Chromium and to don't fall back on performance. However, it doesn't give you an API to communicate with the host OS native features.
+
+And that's where [Cordova](https://cordova.apache.org/) came to light.
+
+### Cordova
+
+Cordova is a platform that allows to reuse code across platforms (Android, iOS, etc) and access native device APIs.
+
+We were in need of some native features for most games:
+
+- [Take pictures with the camera](https://github.com/apache/cordova-plugin-camera)
+- [Text to speech](https://github.com/vilic/cordova-plugin-tts)
+- [Native keyboard](com.ionic.keyboard)
+- [Canvas to image](org.devgeeks.Canvas2ImagePlugin)
+- [Access files](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-file/)
+- [In App Browser](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/)
+
+But there was a major issue back then: Cordova had no built-in integration with Crosswalk.
+
+Now crosswalk is yet another easy to install plugin: `cordova plugin add cordova-plugin-crosswalk-webview`.
+
+However, when we first started the games we had to use a custom integration between Cordova and Crosswalk.
+
+<github-repo-card owner="tylerbuchea" name="cordova-android-crosswalk"></github-repo-card>
+
+It was a pleasure to [contribute](https://github.com/tylerbuchea/cordova-android-crosswalk/commits?author=aaccurso) to this small tool, because [tylerbuchea](https://github.com/tylerbuchea) was really open to adapt his project to my needs.
+
+> Later on we migrated to the plugin, which made things easier.
 
 ## Phaser Seed
 
@@ -37,9 +68,6 @@ Reusable game architecture and cross game components.
 
 Chromium based WebView with improved performance and latest browser features.
 
-### Intel x86 + ARM
-
-<github-repo-card name="cordova-android-crosswalk"></github-repo-card>
 
 ## Release Management and Continous Integration
 
