@@ -44,15 +44,20 @@ We were in need of some native features for most games:
 
 But there was a major issue back then: Cordova had no built-in integration with Crosswalk.
 
-Now crosswalk is yet another easy to install plugin: `cordova plugin add cordova-plugin-crosswalk-webview`.
+So we had to use a tool called `cordova-android-crosswalk` which provided a custom integration between Cordova and Crosswalk.
 
-However, when we first started the games we had to use a custom integration between Cordova and Crosswalk.
+<github-repo-card owner="tylerbuchea" name="cordova-android-crosswalk">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
 
-<github-repo-card owner="tylerbuchea" name="cordova-android-crosswalk"></github-repo-card>
+It was a pleasure to [contribute](https://github.com/tylerbuchea/cordova-android-crosswalk/commits?author=aaccurso) to this small tool, because [tylerbuchea](https://github.com/tylerbuchea) was really open to merge PRs.
 
-It was a pleasure to [contribute](https://github.com/tylerbuchea/cordova-android-crosswalk/commits?author=aaccurso) to this small tool, because [tylerbuchea](https://github.com/tylerbuchea) was really open to adapt his project to my needs.
-
-> Later on we migrated to the plugin, which made things easier.
+> Later on we migrated to the cordova plugin, which made things easier. Now crosswalk is yet another easy to install plugin: `cordova plugin add cordova-plugin-crosswalk-webview`.
 
 ## Phaser Seed
 
@@ -60,7 +65,14 @@ As we made progress on the first game, we started to add some more tools and we 
 
 Reusable game architecture and cross game components.
 
-<github-repo-card name="phaser-seed"></github-repo-card>
+<github-repo-card name="phaser-seed">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
 
 ## Git
 
@@ -71,7 +83,14 @@ Chromium based WebView with improved performance and latest browser features.
 
 ## Release Management and Continous Integration
 
-<github-repo-card name="grunt-bump-cordova"></github-repo-card>
+<github-repo-card name="grunt-bump-cordova">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
 
 ### Jenkins
 
@@ -83,9 +102,30 @@ Chromium based WebView with improved performance and latest browser features.
 
 [html5gamedevs](http://www.html5gamedevs.com/profile/11049-aaccurso/)
 
-<github-repo-card name="phaser-state-transition-plugin"></github-repo-card>
+<github-repo-card name="phaser-state-transition-plugin">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
 
 [state transition thread](http://www.html5gamedevs.com/topic/10015-phaser-213-and-state-transition-plugin/?do=findComment&comment=64638)
 
-<github-repo-card name="canvas-image-saver"></github-repo-card>
-<github-repo-card name="Canvas2ImagePlugin"></github-repo-card>
+<github-repo-card name="canvas-image-saver">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
+<github-repo-card name="Canvas2ImagePlugin">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>

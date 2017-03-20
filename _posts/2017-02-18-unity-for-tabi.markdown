@@ -15,7 +15,14 @@ categories: project gaming unity seed open-source tabi
 
 Git submodule.
 
-<github-repo-card name="unity-seed"></github-repo-card>
+<github-repo-card name="unity-seed">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
 
 ## Unity Shared Assets
 
