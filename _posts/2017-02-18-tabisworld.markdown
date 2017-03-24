@@ -5,7 +5,7 @@ date:   2017-02-18 15:34:03
 categories: project gaming
 ---
 
-[![Tabisworld]({{ site.url }}/assets/tabisworld/tabisworld.jpg)][tabisworld]
+[![Tabisworld]({{ site.url }}/assets/tabisworld/tabisworld.jpg)][tabisworld]{:.is-centered}
 
 ## Introduction
 
