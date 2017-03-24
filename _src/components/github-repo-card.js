@@ -33,7 +33,7 @@ component.register('github-repo-card', {
       <div class="card-body">
         <div class="card-header">
           <a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
-          <span class="repo-language" title="Main Language">{{repo.language}}</span>
+          <span class="repo-language {{repo.language}}" title="Main Language">{{repo.language}}</span>
         </div>
         <p class="card-description">{{{repo.description}}}</p>
       </div>

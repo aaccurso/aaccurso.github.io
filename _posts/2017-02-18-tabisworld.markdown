@@ -58,7 +58,7 @@ I tried some of them and [Phaser] was one of the most opinionated, well document
 
 And luckily it turned out really good.
 
-> You can learn more about the full stack of technologies and architecture [here][phaser-for-tabi].
+> You can learn more about the Phaser experience [here][phaser-for-tabi].
 
 ## The First Batch of Games
 
