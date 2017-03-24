@@ -63,10 +63,11 @@ And luckily it turned out really good.
 
 ## The First Batch of Games
 
-* [Sort & Recycle] ![Sort & Recycle](/assets/tabisworld/game-icons/sort-and-recycle.png){: .icon} — simple drag and drop mechanics for sorting the residues into the correct bin and catch the residues mini games.
-* [Avatars Factory] ![Avatars Factory](/assets/tabisworld/game-icons/avatars-factory.png){: .icon} — drawer game to generate funny avatars that can speak out loud anything you want.
-* [Scribbles] ![Scribbles](/assets/tabisworld/game-icons/scribbles.png){: .icon} — drawing game that teaches how to write letters and numbers.
-* [My First Words] ![My First Words](/assets/tabisworld/game-icons/my-first-words.png){: .icon} — typewriter game to write letters, articles and create photo albums.
+{% include card.html data=site.data.tabisworld.sort-and-recycle %}
+{% include card.html data=site.data.tabisworld.avatars-factory %}
+{% include card.html data=site.data.tabisworld.scribbles %}
+{% include card.html data=site.data.tabisworld.my-first-words %}
+
 * [Water Lab] — which consists of 3 mini games:
   1. [Hydrologic Cycle] ![Hydrologic Cycle](/assets/tabisworld/game-icons/the-water-cycle.png){: .icon} — simple drag and drop mechanics and device movement to explain each phase of the hydrologic cycle.
   2. [Crazy Drop] ![Crazy Drop](/assets/tabisworld/game-icons/crazy-drop.png){: .icon} — runner game to change the state of a water drop between liquid, solid and gas to overcome obstacles.

@@ -363,7 +363,7 @@
 	      });
 	    },
 
-	    template: '\n    <div class="github-repo-card">\n      <div class="owner-avatar">\n        <a href="{{owner.html_url}}">\n        <img src="{{owner.avatar_url}}" alt="{{owner.login}}"/>\n        </a>\n      </div>\n      <div class="repo-details">\n        <div class="repo-name">\n          <a href="{{repo.html_url}}">{{repo.name}}</a>\n          <span class="repo-language" title="Main Language">{{repo.language}}</span>\n        </div>\n        <p class="repo-description">{{{repo.description}}}</p>\n      </div>\n    </div>\n  '
+	    template: '\n    <div class="github-repo card">\n      <div class="card-thumbnail">\n        <a href="{{owner.html_url}}">\n          <img src="{{owner.avatar_url}}" alt="{{owner.login}}"/>\n        </a>\n      </div>\n      <div class="card-body">\n        <div class="card-header">\n          <a href="{{repo.html_url}}">{{repo.name}}</a>\n          <span class="repo-language" title="Main Language">{{repo.language}}</span>\n        </div>\n        <p class="card-description">{{{repo.description}}}</p>\n      </div>\n    </div>\n  '
 	  });
 	});
 

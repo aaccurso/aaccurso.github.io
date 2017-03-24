@@ -1,44 +1,21 @@
-$gutter: 8px;
-$border-color: darkgrey;
+$language-color: lightgray;
 
-.github-repo-card {
-  display: flex;
-  padding: $gutter;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  margin-bottom: $gutter;
-  box-shadow: $border-color 1px 1px 3px;
-
-  .owner-avatar {
-    align-self: center;
-    flex-shrink: 0;
-    display: inline-block;
-    margin-right: $gutter;
-
+.github-repo.card {
+  .card-thumbnail {
     img {
       border-radius: 3px;
-      width: 50px;
     }
   }
 
-  .repo-details {
-    border-left: 1px solid $border-color;
-    padding-left: $gutter;
-
-    .repo-name {
-      font-weight: bold;
-    }
-
+  .card-body {
     .repo-language {
       border-radius: 3px;
       font-size: x-small;
       padding: 2px 4px;
-      background: lightgray;
+      background: $language-color;
     }
 
-    .repo-description {
-      margin-bottom: 0;
-
+    .card-description {
       .gh-emoji {
         width: 20px;
       }
