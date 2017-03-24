@@ -70,12 +70,12 @@ And luckily it turned out really good.
 
 <section class="google-play card-group">
   <header class="card-group-header">
-    <a href="http://eurocase.com/tabi-apps-para-pequenios-cientificos">Water Lab</a> — which consists of 3 mini games:
+    <a href="http://eurocase.com/tabi-apps-para-pequenios-cientificos" target="_blank">Water Lab</a> — which consists of 3 mini games:
   </header>
   <div class="card-group-body">
     {% include card.html data=site.data.tabisworld.hydrologic-cycle %}
-    {% include card.html data=site.data.tabisworld.crazy-drop %}
     {% include card.html data=site.data.tabisworld.does-it-float %}
+    {% include card.html data=site.data.tabisworld.crazy-drop %}
   </div>
 </section>
 
@@ -95,11 +95,11 @@ And it paid off.
 
 ## The Second Batch of Games
 
-* [Car Magnets] ![Car Magnets](/assets/tabisworld/game-icons/car-magnets.png){: .icon} — drag possitive or negative magnets to move a magnetized toy car through a racing track.
-* [Green Shelter] ![Green Shelter](/assets/tabisworld/game-icons/green-shelter.png){: .icon} — kind of tamagotchi for plants with quick minigames to resist plagues.
-* [My Little Agenda] ![My Little Agenda](/assets/tabisworld/game-icons/my-first-calendar.png){: .icon} — simple agenda for toddlers with fun minigames (like a jumper) to teach the concept of time.
-* [Play with Energies] ![Play with Energies](/assets/tabisworld/game-icons/playing-with-energies.png){: .icon} — fun minigames involving device movement to explain different renewable energies.
-* [Peace Chain] ![Peace Chain](/assets/tabisworld/game-icons/peace-chain.png){: .icon} — snake-like game for collecting people of different ethnicities to foster peace.
+{% include card.html data=site.data.tabisworld.car-magnets %}
+{% include card.html data=site.data.tabisworld.green-shelter %}
+{% include card.html data=site.data.tabisworld.my-little-agenda %}
+{% include card.html data=site.data.tabisworld.play-with-energies %}
+{% include card.html data=site.data.tabisworld.peace-chain %}
 
 ## The End
 
@@ -124,23 +124,3 @@ It was a pleasure to contribute to the education of children by developing games
 [Unity]: https://unity3d.com/
 [unity-for-tabi]: {{ site.baseurl }}{% post_url 2017-02-18-unity-for-tabi %}
 [tabi-platform]: {{ site.baseurl }}{% post_url 2017-02-18-tabi-platform %}
-
-[Sort & Recycle post]: http://eurocase.com/clasifica-y-recicla-app-educativa-tabi
-[Sort & Recycle]: https://play.google.com/store/apps/details?id=com.eurocase.reciclaje01
-[Avatars Factory post]: http://eurocase.com/nueva-app-Tabi-fabrica-de-avatares
-[Avatars Factory]: https://play.google.com/store/apps/details?id=com.eurocase.avatares01
-[Scribbles post]: http://eurocase.com/nueva-app-Tabi-grafismos-con-boni
-[Scribbles]: https://play.google.com/store/apps/details?id=com.eurocase.grafismos01
-[My First Words post]: http://eurocase.com/press/detail/83
-[My First Words]: https://play.google.com/store/apps/details?id=com.eurocase.textos01
-[Water Lab]: http://eurocase.com/tabi-apps-para-pequenios-cientificos
-[Hydrologic Cycle]: https://play.google.com/store/apps/details?id=com.eurocase.hydrologic_cycle
-[Crazy Drop]: https://play.google.com/store/apps/details?id=com.eurocase.states_change
-[Does it float?]: https://play.google.com/store/apps/details?id=com.eurocase.buoyancy
-[Car Magnets post]: http://eurocase.com/press/detail/80
-[Car Magnets]: https://play.google.com/store/apps/details?id=com.eurocase.Laboratorio02
-[Green Shelter post]: http://eurocase.com/press/detail/86
-[Green Shelter]: https://play.google.com/store/apps/details?id=com.eurocase.greenshelter
-[My Little Agenda]: https://play.google.com/store/apps/details?id=com.eurocase.tabimylittleagenda
-[Play With Energies]: https://play.google.com/store/apps/details?id=com.eurocase.playwithenergies
-[Peace Chain]: https://play.google.com/store/apps/details?id=com.eurocase.peacechain
