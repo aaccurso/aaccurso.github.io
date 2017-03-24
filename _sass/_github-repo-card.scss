@@ -1,8 +1,8 @@
 $language-color: lightgray;
 $white: white;
-$javascript-color: yellow;
-$java-color: red;
-$CSharp: lightskyblue;
+$javascript-color: #F1DC41;
+$java-color: #FF0000;
+$CSharp: #691C7C;
 
 .github-repo.card {
   .card-thumbnail {
@@ -29,6 +29,7 @@ $CSharp: lightskyblue;
 
       &.C\# {
         background: $CSharp;
+        color: $white;
       }
     }
 
