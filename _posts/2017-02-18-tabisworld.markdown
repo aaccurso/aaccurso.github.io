@@ -4,9 +4,6 @@ title:  "TABIs World"
 date:   2017-02-18 15:34:03
 categories: project gaming
 ---
-
-[![Tabisworld]({{ site.url }}/assets/tabisworld/tabisworld.jpg)][tabisworld]{:.is-centered}
-
 ## Introduction
 
 Today I felt like writing about one of my greatest professional experiences.
@@ -22,6 +19,8 @@ Then one day in late November 2014 the head of HHRR and the CEO called me into t
 The client was an electronic manufacturer that sold tablets, among other things. And they had released a tablet for kids called [TABI][tabisworld], which was designed to resist heavy use by the little ones.
 
 So the idea was to start selling the tablets to kindergartens so teachers could have technological aid when teaching their 4-6 year-old students. And in order to do that, they wanted to provide **educational games** that would already be installed in the TABIs.
+
+[![Tabisworld]({{ site.url }}/assets/tabisworld/tabisworld.jpg)][tabisworld]{:.is-centered}{:style="height: 200px;"}
 
 ## The Team
 
