@@ -26,13 +26,13 @@ component.register('github-repo-card', {
   template: `
     <div class="github-repo card">
       <div class="card-thumbnail">
-        <a href="{{owner.html_url}}">
+        <a href="{{owner.html_url}}" target="_blank">
           <img src="{{owner.avatar_url}}" alt="{{owner.login}}"/>
         </a>
       </div>
       <div class="card-body">
         <div class="card-header">
-          <a href="{{repo.html_url}}">{{repo.name}}</a>
+          <a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
           <span class="repo-language" title="Main Language">{{repo.language}}</span>
         </div>
         <p class="card-description">{{{repo.description}}}</p>
