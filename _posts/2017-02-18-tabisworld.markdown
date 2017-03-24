@@ -68,10 +68,16 @@ And luckily it turned out really good.
 {% include card.html data=site.data.tabisworld.scribbles %}
 {% include card.html data=site.data.tabisworld.my-first-words %}
 
-* [Water Lab] — which consists of 3 mini games:
-  1. [Hydrologic Cycle] ![Hydrologic Cycle](/assets/tabisworld/game-icons/the-water-cycle.png){: .icon} — simple drag and drop mechanics and device movement to explain each phase of the hydrologic cycle.
-  2. [Crazy Drop] ![Crazy Drop](/assets/tabisworld/game-icons/crazy-drop.png){: .icon} — runner game to change the state of a water drop between liquid, solid and gas to overcome obstacles.
-  3. [Does it float?] ![Does it float?](/assets/tabisworld/game-icons/does-it-float.png){: .icon} — slide to cut a rope attached to a buoy and an objects that can float or not.
+<section class="google-play card-group">
+  <header class="card-group-header">
+    <a href="http://eurocase.com/tabi-apps-para-pequenios-cientificos">Water Lab</a> — which consists of 3 mini games:
+  </header>
+  <div class="card-group-body">
+    {% include card.html data=site.data.tabisworld.hydrologic-cycle %}
+    {% include card.html data=site.data.tabisworld.crazy-drop %}
+    {% include card.html data=site.data.tabisworld.does-it-float %}
+  </div>
+</section>
 
 ## The New Technologies
 

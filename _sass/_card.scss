@@ -4,10 +4,9 @@ $border-color: darkgrey;
 .card {
   display: flex;
   padding: $gutter;
-  border: 1px solid transparent;
   border-radius: 3px;
   margin-bottom: $gutter;
-  box-shadow: $border-color 1px 1px 3px;
+  box-shadow: $border-color 1px 1px 6px;
 
   .card-thumbnail {
     align-self: center;
@@ -26,6 +25,32 @@ $border-color: darkgrey;
 
     .card-description {
       margin-bottom: 0;
+    }
+  }
+}
+
+.card-group {
+  padding: $gutter;
+  border-radius: 3px;
+  margin-bottom: $gutter;
+  box-shadow: $border-color 1px 1px 6px;
+
+  .card-group-header {
+    border-bottom: 1px solid $border-color;
+    padding: 2px;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .card {
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 0;
+
+    .card-body {
+      padding-top: $gutter;
     }
   }
 }
