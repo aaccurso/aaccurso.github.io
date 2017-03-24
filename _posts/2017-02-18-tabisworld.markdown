@@ -98,15 +98,15 @@ And it paid off.
 
 The main phase of the project ended when we finished the first batch of 10 games.
 
-After reaching this milestone, I switched to leading a small team that would build the **Web Platform** that integrated the whole universe of games and provided useful tools to the teachers.
+After reaching this milestone, I made a trip to Europe and when I came back I switched to leading a small team that would build the **TABI Web Platform** that integrated the whole universe of games and provided useful tools to the teachers.
 
 But this is _another story_ that could very well fit in another post.
 
-TABI marked my career and was one of the most enjoyable projects I took part in.
+TABI marked my career and was one of the most enjoyable projects I was involved.
 
-It was a pleasure to contribute in the education of children by developing games, which makes it even more fun.
+It was a pleasure to contribute to the education of children by developing games, which makes it even more fun.
 
-> Thanks for reading :)
+> Thanks for reading and spread the love :)
 
 [tabisworld]: http://www.tabisworld.com/
 [html5-engines]: https://html5gameengine.com/tag/2d
