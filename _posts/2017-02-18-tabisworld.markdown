@@ -80,13 +80,13 @@ And luckily it turned out really good.
 
 ## The New Technologies
 
-After half a year of building HTML5 mobile games and 5 games later an opportunity presented to **change the technologies we were using**.
+After half a year of building HTML5 mobile games and 5 games later, an opportunity presented to **change the technologies we were using**.
 
 And let me be honest, HTML5 was good and all but I still felt the quality of the final product could be improved. There was a reality, HTML5 Canvas and WebGL [didn't perform great][mobile-performance] on mobile browsers and we were tired of dealing with performance issues on games that relied heavily on physics.
 
-Turns out we were finishing the game design phase for a new game and the client was on the verge of approving it when the good news came. A new designer would join the client's design team, and he had experience designing mobile games. Up until now we were working with web designers, so having a game art designer in the team was a game changer for **improving overall quality**.
+Turns out we were finishing the game design phase for a new game and the client was on the verge of approving it when the good news came. A new designer specialised in animations would join the client's design team, and he had experience designing mobile games. By having more capacity for adding animations we could **improving visual quality**.
 
-I felt we could take advantage of this new addition to the team by starting to build the upcoming games with a better engine for mobile. One of the guys in the team had tried out [Unity] in the past for small things and he was very excited he would start a new game with it. So between he and I we learned Unity and started to build the next game with it.
+So I felt we could take advantage of this new addition to the team by starting to build the upcoming games with a better engine for mobile games. One of the guys in the team had tried out [Unity] in the past for a small project in his previous job and he was very excited he could start a new game with it. So between he and me we learned Unity and started to build the next game with it.
 
 And it paid off.
 
@@ -100,15 +100,15 @@ And it paid off.
 {% include card.html data=site.data.tabisworld.play-with-energies %}
 {% include card.html data=site.data.tabisworld.peace-chain %}
 
-## The End
+## Game Over
 
 The main phase of the project ended when we finished the first batch of 10 games.
 
 After reaching this milestone, I made a trip to Europe and when I came back I switched to leading a small team that would build the **TABI Web Platform** that integrated the whole universe of games and provided useful tools to the teachers.
 
-But this is _another story_ that could very well fit in another post.
+But that is _another story_ that could very well fit in a different post.
 
-TABI marked my career and was one of the most enjoyable projects I was involved.
+All in all, TABI marked my career and was one of the most enjoyable projects I was involved.
 
 It was a pleasure to contribute to the education of children by developing games, which makes it even more fun.
 
