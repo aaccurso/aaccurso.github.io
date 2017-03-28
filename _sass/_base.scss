@@ -213,3 +213,24 @@ pre {
 img.icon {
   width: 20px;
 }
+
+.site-title {
+  display: flex;
+
+  .avatar {
+    align-self: center;
+    margin-right: 10px;
+
+    img {
+      border-radius: 50%;
+      display: block;
+      transition: filter .5s;
+    }
+  }
+
+  &:hover {
+    img {
+      filter: grayscale(1);
+    }
+  }
+}

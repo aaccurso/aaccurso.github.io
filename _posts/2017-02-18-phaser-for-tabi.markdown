@@ -68,14 +68,7 @@ That's when _PhaserSeed_ came to life, with all the configuration and common com
 
 > This is an outdated version of the seed we used for our late games, but it's still useful to have as a starting point.
 
-## Git
-
-## Crosswalk
-
-Chromium based WebView with improved performance and latest browser features.
-
-
-## Release Management and Continous Integration
+## Release Management
 
 <github-repo-card name="grunt-bump-cordova">
   <div class="loading">
@@ -86,11 +79,13 @@ Chromium based WebView with improved performance and latest browser features.
   </div>
 </github-repo-card>
 
+### GitFlow
+
+## Continous Integration
+
 ### Jenkins
 
 ### TestFairy
-
-### Google Drive
 
 ## Open Source and Community
 
