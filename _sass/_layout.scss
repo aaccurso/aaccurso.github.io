@@ -238,3 +238,10 @@
         }
     }
 }
+
+// Hide disqus on print
+@media print {
+  #disqus_thread {
+    display: none;
+  }
+}
