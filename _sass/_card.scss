@@ -56,3 +56,10 @@ $border-color: darkgrey;
     }
   }
 }
+
+.cards-container {
+  >.card:last-child,
+  >.card-group:last-child {
+    margin-bottom: $spacing-unit / 2;
+  }
+}

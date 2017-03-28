@@ -22,7 +22,7 @@ So the idea was to start selling the tablets to kindergartens so teachers could 
 
 [![Tabisworld]({{ site.url }}/assets/tabisworld/tabisworld.jpg)][tabisworld]{:.is-centered}{:style="height: 200px;"}
 
-## The Team
+## Team
 
 Creating a game from scratch is no easy matter and it requires multidisciplinary teams.
 
@@ -32,7 +32,7 @@ Also there was a team of 2 teachers who would propose the topics for the games, 
 
 After 2 months of work, we recruited a new game developer and a trainee working in the client. And 4 months later, that is 6 months after the project kickoff, we added to the team 2 more developers, one in the client. By that time we had a **team of 6 developers**, including me.
 
-## The Process
+## Workflow
 
 Each week we had 2 **creative sessions** with the client in order to come up with ideas for the games we were working on and for the upcoming games.
 
@@ -44,11 +44,11 @@ This was the **game design** phase, which for me was one of the most enjoyable p
 
 And the greatest thing about all of this was that we learned a lot along the way. After each game we created, we gained a lot of knowledge and transferred that knowledge from one game to the other.
 
-For me having the possibility to lead a team of game developers and propose a process for building games that integrated **multidisciplinary teams** was awesome and challenging at the same time.
+For me having the possibility to lead a team of game developers and propose a workflow for building games that integrated **multidisciplinary teams** was awesome and challenging at the same time.
 
-## The Technologies
+## Technologies
 
-At the moment I knew that the technologies we were going to choose for the first couple of games would probably determine the stack for the rest of the games. And it was both a short term and a long term decision, since more games had to be built in the future months.
+At the moment I knew that the technologies we were going to choose for the first couple of games would probably determine the _stack_ for the rest of the games. And it was both a short term and a long term decision, since more games had to be built in the future months.
 
 We had an approximate vision of the type of games we were going to build and we already knew we needed a **2D engine** since there would be no 3D involved. So I decided to lean on the Javascript path because the team had a lot of experience with the technologies associated and also my last mobile project was built with [Cordova], and it was a success considering the tight timeline we had.
 
@@ -60,25 +60,27 @@ And luckily it turned out really good.
 
 > You can learn more about the Phaser experience [here][phaser-for-tabi].
 
-## The First Batch of Games
+## First Batch of Games
 
-{% include card.html data=site.data.tabisworld.sort-and-recycle %}
-{% include card.html data=site.data.tabisworld.avatars-factory %}
-{% include card.html data=site.data.tabisworld.scribbles %}
-{% include card.html data=site.data.tabisworld.my-first-words %}
+<div class="cards-container">
+  {% include card.html data=site.data.tabisworld.sort-and-recycle %}
+  {% include card.html data=site.data.tabisworld.avatars-factory %}
+  {% include card.html data=site.data.tabisworld.scribbles %}
+  {% include card.html data=site.data.tabisworld.my-first-words %}
 
-<section class="google-play card-group">
-  <header class="card-group-header">
-    <a href="http://eurocase.com/tabi-apps-para-pequenios-cientificos" target="_blank">Water Lab</a> — which consists of 3 mini games:
-  </header>
-  <div class="card-group-body">
-    {% include card.html data=site.data.tabisworld.hydrologic-cycle %}
-    {% include card.html data=site.data.tabisworld.does-it-float %}
-    {% include card.html data=site.data.tabisworld.crazy-drop %}
-  </div>
-</section>
+  <section class="google-play card-group">
+    <header class="card-group-header">
+      <a href="http://eurocase.com/tabi-apps-para-pequenios-cientificos" target="_blank">Water Lab</a> — which consists of 3 mini games:
+    </header>
+    <div class="card-group-body">
+      {% include card.html data=site.data.tabisworld.hydrologic-cycle %}
+      {% include card.html data=site.data.tabisworld.does-it-float %}
+      {% include card.html data=site.data.tabisworld.crazy-drop %}
+    </div>
+  </section>
+</div>
 
-## The New Technologies
+## _New_ Technologies
 
 After half a year of building HTML5 mobile games and 5 games later, an opportunity presented to **change the technologies we were using**.
 
@@ -92,13 +94,15 @@ And it paid off.
 
 > You can learn more about the Unity experience [here][unity-for-tabi].
 
-## The Second Batch of Games
+## Second Batch of Games
 
-{% include card.html data=site.data.tabisworld.car-magnets %}
-{% include card.html data=site.data.tabisworld.green-shelter %}
-{% include card.html data=site.data.tabisworld.my-little-agenda %}
-{% include card.html data=site.data.tabisworld.play-with-energies %}
-{% include card.html data=site.data.tabisworld.peace-chain %}
+<div class="cards-container">
+  {% include card.html data=site.data.tabisworld.car-magnets %}
+  {% include card.html data=site.data.tabisworld.green-shelter %}
+  {% include card.html data=site.data.tabisworld.my-little-agenda %}
+  {% include card.html data=site.data.tabisworld.play-with-energies %}
+  {% include card.html data=site.data.tabisworld.peace-chain %}
+</div>
 
 ## Game Over
 
