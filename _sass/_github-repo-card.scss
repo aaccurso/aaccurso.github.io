@@ -1,8 +1,10 @@
 $language-color: lightgray;
+$black: black;
 $white: white;
 $javascript-color: #F1DC41;
 $java-color: #FF0000;
 $CSharp: #691C7C;
+$Go: #71CEDF;
 
 .github-repo.card {
   .card-thumbnail {
@@ -29,6 +31,15 @@ $CSharp: #691C7C;
 
       &.C\# {
         background: $CSharp;
+        color: $white;
+      }
+
+      &.Go {
+        background: $Go;
+      }
+
+      &.Shell {
+        background: $black;
         color: $white;
       }
     }

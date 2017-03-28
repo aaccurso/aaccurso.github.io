@@ -55,7 +55,7 @@ As we made progress on the first game, we started to add some more tools, grunt 
 
 So when we started developing the second game, I thought we should have a seed project in order to kick off games quicker and based on an architecture consistent across games.
 
-That's when _PhaserSeed_ came to life, with all the configuration and common components needed for building our games.
+That's when _PhaserSeed_ came to life, with all the configuration and common components needed for building our games such as: i18n, local storage management, user game settings, common navigation, modals, sound management, assets preloading, environment specific configuration, etc.
 
 <github-repo-card name="phaser-seed">
   <div class="loading">
@@ -85,7 +85,31 @@ That's when _PhaserSeed_ came to life, with all the configuration and common com
 
 ### Jenkins
 
-### TestFairy
+### Distribution
+
+#### TestFairy
+
+<github-repo-card owner="testfairy" name="command-line-uploader">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
+
+#### Google Drive
+
+<github-repo-card owner="prasmussen" name="gdrive">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
+
+{% gist aaccurso/fe0d347b292022eabeb92eebd89d1af5 %}
 
 ## Open Source and Community
 
