@@ -4,9 +4,6 @@ title:  "Phaser for TABI"
 date:   2017-02-18 15:34:03
 categories: project gaming phaser seed open-source tabi
 ---
-
-# WIP
-
 My experience with Phaser for the TABI project started off in late 2014 by following this [amazing tutorial](http://www.codevinsky.com/phaser-2-0-tutorial-flappy-bird-part-5/) on how to create a game similar to Flappy Bird.
 
 The great thing was that the creator of the tutorial used a [yeoman generator for Phaser](https://github.com/8-uh/generator-phaser-official) to create the application.
@@ -33,18 +30,13 @@ And that's where [Cordova](https://cordova.apache.org/) came to light.
 
 Cordova is a platform that allows to reuse code across platforms (Android, iOS, etc) and access native device APIs.
 
-We were in need of some native features for most games:
+We were in need of some native features for most games: [Take pictures with the camera](https://github.com/apache/cordova-plugin-camera), [Text to speech](https://github.com/vilic/cordova-plugin-tts), [Native keyboard](com.ionic.keyboard), [Canvas to image](org.devgeeks.Canvas2ImagePlugin), [Access files](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-file/) and [In App Browser](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/).
 
-- [Take pictures with the camera](https://github.com/apache/cordova-plugin-camera)
-- [Text to speech](https://github.com/vilic/cordova-plugin-tts)
-- [Native keyboard](com.ionic.keyboard)
-- [Canvas to image](org.devgeeks.Canvas2ImagePlugin)
-- [Access files](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-file/)
-- [In App Browser](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/)
-
-But there was a major issue back then: Cordova had no built-in integration with Crosswalk.
+But there was a major issue back then: _Cordova had no built-in integration with Crosswalk_.
 
 So we had to use a tool called `cordova-android-crosswalk` which provided a custom integration between Cordova and Crosswalk.
+
+It was a pleasure to [contribute](https://github.com/tylerbuchea/cordova-android-crosswalk/commits?author=aaccurso) to this small tool (which is now deprecated), because [tylerbuchea](https://github.com/tylerbuchea) was really open to merge PRs.
 
 <github-repo-card owner="tylerbuchea" name="cordova-android-crosswalk">
   <div class="loading">
@@ -55,15 +47,15 @@ So we had to use a tool called `cordova-android-crosswalk` which provided a cust
   </div>
 </github-repo-card>
 
-It was a pleasure to [contribute](https://github.com/tylerbuchea/cordova-android-crosswalk/commits?author=aaccurso) to this small tool, because [tylerbuchea](https://github.com/tylerbuchea) was really open to merge PRs.
-
 > Later on we migrated to the cordova plugin, which made things easier. Now crosswalk is yet another easy to install plugin: `cordova plugin add cordova-plugin-crosswalk-webview`.
 
 ## Phaser Seed
 
-As we made progress on the first game, we started to add some more tools and we mutated the initial architecture to something that made sense for our projects.
+As we made progress on the first game, we started to add some more tools, grunt tasks and we mutated the initial architecture to something that made sense for our projects.
 
-Reusable game architecture and cross game components.
+So when we started developing the second game, I thought we should have a seed project in order to kick off games quicker and based on an architecture consistent across games.
+
+That's when _PhaserSeed_ came to life, with all the configuration and common components needed for building our games.
 
 <github-repo-card name="phaser-seed">
   <div class="loading">
@@ -73,6 +65,8 @@ Reusable game architecture and cross game components.
     <div class="loading-bar"></div>
   </div>
 </github-repo-card>
+
+> This is an outdated version of the seed we used for our late games, but it's still useful to have as a starting point.
 
 ## Git
 
