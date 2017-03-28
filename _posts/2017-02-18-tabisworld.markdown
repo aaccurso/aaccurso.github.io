@@ -4,8 +4,6 @@ title:  "TABIs World"
 date:   2017-02-18 15:34:03
 categories: project gaming
 ---
-## Introduction
-
 Today I felt like writing about one of my greatest professional experiences.
 
 It all started one day when the CEO of the company I was working at had closed a deal on a project that consisted of **building 10 mobile games for kids** and he had chosen me to be the **technical leader** of the project.
