@@ -10,7 +10,7 @@ The great thing was that the creator of the tutorial used a [yeoman generator fo
 
 The generated app was already built upon amazing tools such as [Browserify](https://browserify.org) in order to modularize code for browsers, [JSHint](http://jshint.com/) to detect errors and potential problems in the code and [EditorConfig](https://editorconfig.org/) for maintaining consistent file formats and coding styles between different editors and IDEs.
 
-It also provided an initial architecture for the game, based on states and prefabs, which heavily depended on JavaScript prototypes to give the app an OOP nature.
+It also provided an **initial architecture** for the game, based on states and prefabs, which heavily depended on JavaScript prototypes to give the app an OOP nature.
 
 This was awesome because it provided the necessary structure for the team to be able to have a mental image of all the components involved in the app and build upon it.
 
@@ -28,7 +28,7 @@ And that's where [Cordova](https://cordova.apache.org/) came to light.
 
 ### Cordova
 
-Cordova is a platform that allows to reuse code across platforms (Android, iOS, etc) and access native device APIs.
+Cordova is a platform that allows to **reuse code across platforms** (Android, iOS, etc) and access native device APIs.
 
 We were in need of some native features for most games: [Take pictures with the camera](https://github.com/apache/cordova-plugin-camera), [Text to speech](https://github.com/vilic/cordova-plugin-tts), [Native keyboard](com.ionic.keyboard), [Canvas to image](org.devgeeks.Canvas2ImagePlugin), [Access files](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-file/) and [In App Browser](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/).
 
@@ -51,9 +51,9 @@ It was a pleasure to [contribute](https://github.com/tylerbuchea/cordova-android
 
 ## Phaser Seed
 
-As we made progress on the first game, we started to add some more tools, grunt tasks and we mutated the initial architecture to something that made sense for our projects.
+As we made progress on the first game, we started to add some more tools, [Grunt](https://gruntjs.com/) tasks and we mutated the initial architecture to something that made sense for our projects.
 
-So when we started developing the second game, I thought we should have a seed project in order to kick off games quicker and based on an architecture consistent across games.
+So when we started developing the second game, I thought we should have a **starterkit project** in order to kick off games quicker and based on an architecture consistent across games.
 
 That's when _PhaserSeed_ came to life, with all the configuration and common components needed for building our games such as: i18n, local storage management, user game settings, common navigation, modals, sound management, assets preloading, environment specific configuration, etc.
 
@@ -72,11 +72,11 @@ That's when _PhaserSeed_ came to life, with all the configuration and common com
 
 Versioning any piece of software is very important for a number of reasons such as the ability to compare two snapshots of the same software, link the version in an issue tracker, include a specific version as a dependency of another project, among [others](https://developer.android.com/studio/publish/versioning.html).
 
-When building an application that will be installed by the final user, it's essential to have a release management strategy that will allow [distribution](#distribution) of a version and a history of versions to let the QA team install a specific version of the app.
+When building an application that will be installed by the final user, it's essential to have a release management strategy that will allow [distribution](#distribution) of a version and a **history of versions** to let the QA team install a specific version of the app.
 
 In our case, we decided to use [Semantic Versioning](http://semver.org/) for our version names.
 
-Manually releasing an application is a real hassle. That's why I started looking for a tool that could do that for us. At that moment I came across [grunt-bump](https://github.com/vojtajina/grunt-bump), which is great (if you are using good old [Grunt](https://gruntjs.com/)) for bumping version files such as `package.json`.
+Manually releasing an application is a real hassle. That's why I started looking for a tool that could do that for us. At that moment I came across [grunt-bump](https://github.com/vojtajina/grunt-bump), which is great (if you are using good old Grunt) for bumping version files such as `package.json`.
 
 However, that wasn't enough because we were dealing with Cordova's `config.xml` version file, which is used for determining the Android package version.
 
@@ -95,7 +95,7 @@ So I decided to extend that tool to support bumping Cordova based projects.
 
 ### Git
 
-Since we were a medium sized team, I though it would be a good idea to go with a robust git flow for managing feaure branches, hotfixes and releases.
+Since we were a medium sized team, I though it would be a good idea to go with a **robust git flow** for managing feaure branches, hotfixes and releases.
 
 So we included [gitflow](https://github.com/nvie/gitflow) in all our repositories.
 
@@ -105,8 +105,22 @@ Also we configured a pre-commit hook to check for _jscs_ and _jshint_ errors. I 
 
 ### Jenkins
 
-Android: https://www.digitalocean.com/community/tutorials/how-to-build-android-apps-with-jenkins
-iOS: https://gist.github.com/escapedcat/2bde893b784147248c2d0f199394dc65
+To **automate the build process** we decided to use our company's Jenkins server hosted on Ubuntu Server.
+
+We created one job per application which performed the build of latest master unless a tag was specified.
+
+In order for Jenkins to be able to **build an Android Cordova application** it was necessary to:
+- Download the standalone Android tools and set the necessary environment variables.
+- Install the correct Android SDK with `adb`.
+- Install Cordova globally with `npm install -g cordova` (this is not necessary if you have cordova as a dev-dependency in your project since you can create a npm script).
+
+> And that's almost all there is to it, you can follow this [instructions](https://www.digitalocean.com/community/tutorials/how-to-build-android-apps-with-jenkins) for more details.
+
+Then our jobs would execute a Shell script similar to:
+
+{% gist aaccurso/388b83956e83c2ac675988e346f71f01 %}
+
+> I found this useful [gist](https://gist.github.com/escapedcat/2bde893b784147248c2d0f199394dc65) to build iOS applications on Linux which may be worth reading if you need to build for iOS.
 
 ### Distribution
 
