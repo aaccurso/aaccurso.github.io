@@ -70,6 +70,18 @@ That's when _PhaserSeed_ came to life, with all the configuration and common com
 
 ## Release Management
 
+Versioning any piece of software is very important for a number of reasons such as the ability to compare two snapshots of the same software, link the version in an issue tracker, include a specific version as a dependency of another project, among [others](https://developer.android.com/studio/publish/versioning.html).
+
+When building an application that will be installed by the final user, it's essential to have a release management strategy that will allow [distribution](#distribution) of a version and a history of versions to let the QA team install a specific version of the app.
+
+In our case, we decided to use [Semantic Versioning](http://semver.org/) for our version names.
+
+Manually releasing an application is a real hassle. That's why I started looking for a tool that could do that for us. At that moment I came across [grunt-bump](https://github.com/vojtajina/grunt-bump), which is great (if you are using good old [Grunt](https://gruntjs.com/)) for bumping version files such as `package.json`.
+
+However, that wasn't enough because we were dealing with Cordova's `config.xml` version file, which is used for determining the Android package version.
+
+So I decided to implement a tool that would bump `config.xml`'s version.
+
 <github-repo-card name="grunt-bump-cordova">
   <div class="loading">
     <div class="loading-bar"></div>
@@ -78,6 +90,8 @@ That's when _PhaserSeed_ came to life, with all the configuration and common com
     <div class="loading-bar"></div>
   </div>
 </github-repo-card>
+
+> If you are managing your tasks with Gulp you can use [gulp-cordova-bump](https://github.com/MichaelTaylor3D/gulp-cordova-bump) which basically provides the same functionality.
 
 ### GitFlow
 
