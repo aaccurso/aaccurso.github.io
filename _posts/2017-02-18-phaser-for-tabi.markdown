@@ -66,7 +66,7 @@ That's when _PhaserSeed_ came to life, with all the configuration and common com
   </div>
 </github-repo-card>
 
-> This is an outdated version of the seed we used for our late games, but it's still useful to have as a starting point.
+> This is an outdated version of the seed we ended up using for our late games, but it's still useful to have as a starting point.
 
 ## Release Management
 
@@ -80,7 +80,7 @@ Manually releasing an application is a real hassle. That's why I started looking
 
 However, that wasn't enough because we were dealing with Cordova's `config.xml` version file, which is used for determining the Android package version.
 
-So I decided to implement a tool that would bump `config.xml`'s version.
+So I decided to extend that tool to support bumping Cordova based projects.
 
 <github-repo-card name="grunt-bump-cordova">
   <div class="loading">
@@ -93,11 +93,20 @@ So I decided to implement a tool that would bump `config.xml`'s version.
 
 > If you are managing your tasks with Gulp you can use [gulp-cordova-bump](https://github.com/MichaelTaylor3D/gulp-cordova-bump) which basically provides the same functionality.
 
-### GitFlow
+### Git
 
-## Continous Integration
+Since we were a medium sized team, I though it would be a good idea to go with a robust git flow for managing feaure branches, hotfixes and releases.
+
+So we included [gitflow](https://github.com/nvie/gitflow) in all our repositories.
+
+Also we configured a pre-commit hook to check for _jscs_ and _jshint_ errors. I decided to go with the strategy _"you can't commit code that doesn't comply with the style rules"_, which may seem extreme but it gave us good results, especially when adding new team members.
+
+> If the timeline hadn't been so tight, instead of a pre-commit I'd have preferred to setup a job in Jenkins to check for this rules before integrating to development.
 
 ### Jenkins
+
+Android: https://www.digitalocean.com/community/tutorials/how-to-build-android-apps-with-jenkins
+iOS: https://gist.github.com/escapedcat/2bde893b784147248c2d0f199394dc65
 
 ### Distribution
 
