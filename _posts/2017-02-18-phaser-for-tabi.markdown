@@ -110,6 +110,7 @@ To **automate the build process** we decided to use our company's Jenkins server
 We created one job per application which performed the build of latest master unless a tag was specified.
 
 In order for Jenkins to be able to **build an Android Cordova application** it was necessary to:
+
 - Download the standalone Android tools and set the necessary environment variables.
 - Install the correct Android SDK with `adb`.
 - Install Cordova globally with `npm install -g cordova` (this is not necessary if you have cordova as a dev-dependency in your project since you can create a npm script).
