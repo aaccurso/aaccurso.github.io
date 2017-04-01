@@ -125,6 +125,10 @@ Then our jobs would execute a Shell script similar to:
 
 ### Distribution
 
+### Signing
+
+https://wiki.jenkins-ci.org/display/JENKINS/Android+Signing+Plugin
+
 #### TestFairy
 
 <github-repo-card owner="testfairy" name="command-line-uploader">
