@@ -20,11 +20,11 @@ This was awesome because it provided the necessary structure for the team to be 
 
 After finishing the tutorial, the first complex challenge we had to overcome was to bundle the app into an Android `apk` that could be installed in the TABIs, which had an **x86 processor** (as opposed to the more popular ARM architecture).
 
-While investigating how to do that I came across [Crosswalk](https://crosswalk-project.org), a tool that generates an `apk` by wrapping the web application in an updated WebView and let's you choose the architecture to build for.
+While investigating how to do that I came across [Crosswalk](https://crosswalk-project.org), a tool that generates an `apk` by wrapping the web application in an up-to-date WebView and let's you choose the architecture to build for.
 
 Crosswalk provides a way to keep up with the latest features released in Chromium and to don't fall back on performance. However, it doesn't give you an API to communicate with the host OS native features.
 
-And that's where [Cordova](https://cordova.apache.org/) came to light.
+And that's where [Cordova](https://cordova.apache.org/) comes in.
 
 ### Cordova
 
@@ -36,7 +36,7 @@ But there was a major issue back then: _Cordova had no built-in integration with
 
 So we had to use a tool called `cordova-android-crosswalk` which provided a custom integration between Cordova and Crosswalk.
 
-It was a pleasure to [contribute](https://github.com/tylerbuchea/cordova-android-crosswalk/commits?author=aaccurso) to this small tool (which is now deprecated), because [tylerbuchea](https://github.com/tylerbuchea) was really open to merge PRs.
+It was a pleasure to [contribute](https://github.com/tylerbuchea/cordova-android-crosswalk/commits?author=aaccurso) to this small tool (which is now deprecated), because [tylerbuchea](https://github.com/tylerbuchea) was really open to merge PRs that satisfied other people's needs.
 
 <github-repo-card owner="tylerbuchea" name="cordova-android-crosswalk">
   <div class="loading">
@@ -76,11 +76,11 @@ When building an application that will be installed by the final user, it's esse
 
 In our case, we decided to use [Semantic Versioning](http://semver.org/) for our version names.
 
-Manually releasing an application is a real hassle. That's why I started looking for a tool that could do that for us. At that moment I came across [grunt-bump](https://github.com/vojtajina/grunt-bump), which is great (if you are using good old Grunt) for bumping version files such as `package.json`.
+Manually bumping an application's version files is a real hassle. That's why I started looking for a tool that could do that for us. At that moment I came across [grunt-bump](https://github.com/vojtajina/grunt-bump), which is great (if you are using good old Grunt) for bumping version files such as `package.json` and `bower.json`.
 
 However, that wasn't enough because we were dealing with Cordova's `config.xml` version file, which is used for determining the Android package version.
 
-So I decided to extend that tool to support bumping Cordova based projects.
+That's why I decided to extend the tool to support bumping Cordova based projects.
 
 <github-repo-card name="grunt-bump-cordova">
   <div class="loading">
@@ -99,37 +99,43 @@ Since we were a medium sized team, I though it would be a good idea to go with a
 
 So we included [gitflow](https://github.com/nvie/gitflow) in all our repositories.
 
-Also we configured a pre-commit hook to check for _jscs_ and _jshint_ errors. I decided to go with the strategy _"you can't commit code that doesn't comply with the style rules"_, which may seem extreme but it gave us good results, especially when adding new team members.
+Also we configured a pre-commit hook to check for _jscs_ and _jshint_ errors. We went with the strategy _"you can't commit code that doesn't comply with the style rules"_, which may seem extreme but it gave us good results, especially when adding new team members.
 
-> If the timeline hadn't been so tight, instead of a pre-commit I'd have preferred to setup a job in Jenkins to check for this rules before integrating to development.
+> If the timeline hadn't been so tight, instead of a pre-commit I'd have preferred to setup a job in Jenkins to check for these rules before integrating to development.
 
 ### Jenkins
 
-To **automate the build process** we decided to use our company's Jenkins server hosted on Ubuntu Server.
+To **automate the build process** we decided to use our company's Jenkins server hosted on an Ubuntu Server.
 
-We created one job per application which performed the build of latest master unless a tag was specified.
+We created one job per application which performed the build of latest master unless a specific version tag was given.
 
 In order for Jenkins to be able to **build an Android Cordova application** it was necessary to:
 
 - Download the standalone Android tools and set the necessary environment variables.
 - Install the correct Android SDK with `adb`.
-- Install Cordova globally with `npm install -g cordova` (this is not necessary if you have cordova as a dev-dependency in your project since you can create a npm script).
+- Install Cordova globally with `npm install -g cordova` (this is not necessary if you have cordova as a dev-dependency in your project, since you can create a npm script).
 
-> And that's almost all there is to it, you can follow this [instructions](https://www.digitalocean.com/community/tutorials/how-to-build-android-apps-with-jenkins) for more details.
+> And that's almost all there is to it, you can follow these [instructions](https://www.digitalocean.com/community/tutorials/how-to-build-android-apps-with-jenkins) for more details.
 
 Then our jobs would execute a Shell script similar to:
 
 {% gist aaccurso/388b83956e83c2ac675988e346f71f01 %}
 
-> I found this useful [gist](https://gist.github.com/escapedcat/2bde893b784147248c2d0f199394dc65) to build iOS applications on Linux which may be worth reading if you need to build for iOS.
+> I found this useful [gist](https://gist.github.com/escapedcat/2bde893b784147248c2d0f199394dc65) to build iOS applications on Linux which may be worth trying if you need to build for iOS.
 
 ### Distribution
 
-### Signing
+When distributing a mobile application for production there are a few things to consider, such as having a developer account in Google Play (which in our case was provided by the client), releasing the package in production mode and signing the package with a keystore.
 
-https://wiki.jenkins-ci.org/display/JENKINS/Android+Signing+Plugin
+However, during the development lifecycle we had a **distribution strategy** to allow for the client and the QA team to access a new version of each application for each sprint.
 
 #### TestFairy
+
+For testing purposes, we chose [TestFairy](https://testfairy.com/) as the **distribution platform** for our mobile applications.
+
+And we used a modified version of it's CLI uploader tool in order to upload the `apk` from the Jenkins job (there was no Jenkins plugin at the moment).
+
+This would notify QA and the client whenever a new version of the applications was released and TestFairy handled the distribution and installation process for us.
 
 <github-repo-card owner="testfairy" name="command-line-uploader">
   <div class="loading">
@@ -140,7 +146,15 @@ https://wiki.jenkins-ci.org/display/JENKINS/Android+Signing+Plugin
   </div>
 </github-repo-card>
 
+> However, if you use Jenkins I'd recommend you try the [TestFairy Plugin](https://wiki.jenkins-ci.org/display/JENKINS/TestFairy+Plugin) which is much more user friendly.
+
 #### Google Drive
+
+And to distribute the production ready releases with the client we decided to upload them to a **shared folder in GDrive**.
+
+At first we manually uploaded the `apk`s by dragging and dropping into the browser's GDrive tab. But this turned out to be cumbersome when we increased the number of games we had.
+
+Luckily, we found a CLI tool to automate the process.
 
 <github-repo-card owner="prasmussen" name="gdrive">
   <div class="loading">
@@ -150,6 +164,8 @@ https://wiki.jenkins-ci.org/display/JENKINS/Android+Signing+Plugin
     <div class="loading-bar"></div>
   </div>
 </github-repo-card>
+
+And we wrote a script similar to the one below to upload the packages.
 
 {% gist aaccurso/fe0d347b292022eabeb92eebd89d1af5 %}
 
