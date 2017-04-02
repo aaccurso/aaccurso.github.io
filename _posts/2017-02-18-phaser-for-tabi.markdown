@@ -171,7 +171,15 @@ And we wrote a script similar to the one below to upload the packages.
 
 ## Open Source and Community
 
-[html5gamedevs](http://www.html5gamedevs.com/profile/11049-aaccurso/)
+As I'm sure you've noticed by now, I've been mentioning technologies that share one main property: they are all **open source** and some of them are **community driven**.
+
+And it is my belief that as a consumer of this abundant amount of open source technology, it's essential that we as a software community _contribute_ to it.
+
+That's why I like getting involved in the [forums](http://www.html5gamedevs.com/profile/11049-aaccurso/) and channels related to the technologies I use.
+
+Whenever I can I try to find ways of abstracting the problems I encounter, in order to come up with solutions that will help other people that may have similar scenarios.
+
+In the case of Phaser, I saw an opportunity to contribute to its community by enhancing a plugin to create cool transitions between states, and it all started by reading a [post](http://www.html5gamedevs.com/topic/10015-phaser-213-and-state-transition-plugin/?do=findComment&comment=64638).
 
 <github-repo-card name="phaser-state-transition-plugin">
   <div class="loading">
@@ -182,7 +190,9 @@ And we wrote a script similar to the one below to upload the packages.
   </div>
 </github-repo-card>
 
-[state transition thread](http://www.html5gamedevs.com/topic/10015-phaser-213-and-state-transition-plugin/?do=findComment&comment=64638)
+> The [original plugin](https://github.com/cristianbote/phaser-state-transition) has been upgraded so I recommend you use that one instead.
+
+For Cordova, apart from `gulp-cordova-bump` and `cordova-android-crosswalk` I thought that sharing the module we had to save a Canvas as an image could be of help to other people.
 
 <github-repo-card name="canvas-image-saver">
   <div class="loading">
@@ -192,11 +202,17 @@ And we wrote a script similar to the one below to upload the packages.
     <div class="loading-bar"></div>
   </div>
 </github-repo-card>
-<github-repo-card name="Canvas2ImagePlugin">
-  <div class="loading">
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-  </div>
-</github-repo-card>
+
+## Conclusion
+
+Lots of tools and technologies were involved in this project.
+
+The **discovery and learning** process of all of them was really exciting.
+
+And it wasn't until writing this post that I realized how much of them have been upgraded or replaced with new ones.
+
+Take for example the core of our build process. If we had to do this today, we probably would've chosen [Webpack](https://webpack.github.io/) as our module bundler, [babel](https://babeljs.io/) to get all the benefits from ES6, [eslint](http://eslint.org/), [no Bower](https://medium.com/@nickheiner/why-my-team-uses-npm-instead-of-bower-eecfe1b9afcb) (just npm modules and [scripts](https://css-tricks.com/why-npm-scripts/)) and maybe [phaser-es6-webpack](https://github.com/lean/phaser-es6-webpack) as the starterkit.
+
+And I think that's one of the things I enjoy most of our line of work.
+
+> Learning new stuff never ends :)
