@@ -12,9 +12,9 @@ I'm a [Software Engineer][Linkedin]{:target="_blank"} and I spend a lot of time 
 
 I also like [reading][Goodreads]{:target="_blank"}, [writing][blog], playing the [keyboards][SoundCloud]{:target="_blank"} and soccer, among [other things][about-me].
 
-You can contact me via [Twitter]{:target="_blank"} to ask me a question or just to say hi. I'd love to chat with you!
+You can contact me via [Twitter]{:target="_blank"} / [email]({{ site.email }}){:href="mailto:{{ site.email }}"} to ask me a question or just to say hi.
 
-> Thanks for visiting
+I'd love to chat with you!
 
 [Linkedin]: https://www.linkedin.com/in/aaccurso
 [Github]: http://github.com/aaccurso
