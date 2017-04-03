@@ -16,9 +16,9 @@ This was awesome because it provided the necessary structure for the team to be 
 
 ## Mobile
 
-### Crosswalk
-
 After finishing the tutorial, the first complex challenge we had to overcome was to bundle the app into an Android `apk` that could be installed in the TABIs, which had an **x86 processor** (as opposed to the more popular ARM architecture).
+
+### Crosswalk
 
 While investigating how to do that I came across [Crosswalk](https://crosswalk-project.org), a tool that generates an `apk` by wrapping the web application in an up-to-date WebView and let's you choose the architecture to build for.
 
