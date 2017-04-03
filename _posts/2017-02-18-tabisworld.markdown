@@ -114,7 +114,7 @@ All in all, TABI marked my career and was one of the most enjoyable projects I w
 
 It was a pleasure to contribute to the education of children by developing games, which makes it even more fun.
 
-> Thanks for reading and spread the love :)
+> Thanks for reading, spread the love :)
 
 [tabisworld]: http://www.tabisworld.com/
 [html5-engines]: https://html5gameengine.com/tag/2d

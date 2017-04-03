@@ -8,11 +8,13 @@ I live in _Buenos Aires, Argentina_.
 
 This is my personal website where you can get to know me better.
 
-I'm a [Software Engineer][Linkedin] and I spend a lot of time [coding][Github], leading teams, participating in meetings and [meetups][Meetup], learning, [teaching][frontend-training], interviewing, coaching &amp; mentoring.
+I'm a [Software Engineer][Linkedin]{:target="_blank"} and I spend a lot of time [coding][Github]{:target="_blank"}, leading teams, participating in meetings and [meetups][Meetup]{:target="_blank"}, learning, [teaching][frontend-training]{:target="_blank"}, interviewing, coaching &amp; mentoring.
 
-I also like [reading][Goodreads] English books, playing the [keyboards][SoundCloud], playing soccer, among [other things][about-me].
+I also like [reading][Goodreads]{:target="_blank"}, [writing][blog], playing the [keyboards][SoundCloud]{:target="_blank"} and soccer, among [other things][about-me].
 
-You can contact me via [Twitter] to ask me a question or just to say hi. I'd love to chat with you!
+You can contact me via [Twitter]{:target="_blank"} to ask me a question or just to say hi. I'd love to chat with you!
+
+> Thanks for visiting :)
 
 [Linkedin]: https://www.linkedin.com/in/aaccurso
 [Github]: http://github.com/aaccurso
@@ -22,3 +24,4 @@ You can contact me via [Twitter] to ask me a question or just to say hi. I'd lov
 [Twitter]: https://twitter.com/aaaccurso
 [SoundCloud]: https://soundcloud.com/alan-accurso
 [about-me]: /about-me
+[blog]: /blog
