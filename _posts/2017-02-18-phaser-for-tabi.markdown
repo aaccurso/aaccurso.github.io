@@ -215,4 +215,4 @@ Take for example the core of our build process. If we had to do this today, we p
 
 And I think that's one of the things I enjoy most of our line of work.
 
-> Learning new stuff never ends :)
+> Learning new stuff never ends

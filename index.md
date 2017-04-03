@@ -14,7 +14,7 @@ I also like [reading][Goodreads]{:target="_blank"}, [writing][blog], playing the
 
 You can contact me via [Twitter]{:target="_blank"} to ask me a question or just to say hi. I'd love to chat with you!
 
-> Thanks for visiting :)
+> Thanks for visiting
 
 [Linkedin]: https://www.linkedin.com/in/aaccurso
 [Github]: http://github.com/aaccurso

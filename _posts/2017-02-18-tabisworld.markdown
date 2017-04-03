@@ -114,7 +114,7 @@ All in all, TABI marked my career and was one of the most enjoyable projects I w
 
 It was a pleasure to contribute to the education of children by developing games, which makes it even more fun.
 
-> Thanks for reading, spread the love :)
+> Thanks for reading, spread the love
 
 [tabisworld]: http://www.tabisworld.com/
 [html5-engines]: https://html5gameengine.com/tag/2d
@@ -124,4 +124,3 @@ It was a pleasure to contribute to the education of children by developing games
 [phaser-for-tabi]: {{ site.baseurl }}{% post_url 2017-02-18-phaser-for-tabi %}
 [Unity]: https://unity3d.com/
 [unity-for-tabi]: {{ site.baseurl }}{% post_url 2017-02-18-unity-for-tabi %}
-[tabi-platform]: {{ site.baseurl }}{% post_url 2017-02-18-tabi-platform %}
