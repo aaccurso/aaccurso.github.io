@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
   <link rel="icon" href="/favicon.ico?" type="image/x-icon">
 
-  <link rel="stylesheet" href="{{ '/css/main.css?' | prepend: site.baseurl | append: site.data['hash'] }}">
+  {% assign hash = site.time | date_to_xmlschema | replace: '-', '' | replace: ':', '' %}
+  <link rel="stylesheet" href="{{ '/css/main.css?' | prepend: site.baseurl | append: hash }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>
