@@ -1,5 +1,6 @@
 ---
-layout: landing
+layout: default
+isLanding: true
 ---
 
 # Hi, I'm Alan.

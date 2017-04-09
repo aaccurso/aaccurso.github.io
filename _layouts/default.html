@@ -13,7 +13,9 @@
       </div>
     </div>
 
-    {% include footer.html %}
+    {% if !post.isLanding %}
+      {% include footer.html %}
+    {% endif %}
 
   </body>
 
