@@ -1,9 +1,3 @@
----
-layout: default
-isLanding: true
-isHome: true
----
-
 # Hi, I'm Alan.
 
 I live in _Buenos Aires, Argentina_.
