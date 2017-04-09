@@ -1,0 +1,65 @@
+$gutter: 8px;
+$border-color: darkgrey;
+
+.card {
+  display: flex;
+  padding: $gutter;
+  border-radius: 3px;
+  margin-bottom: $gutter;
+  box-shadow: $border-color 1px 1px 6px;
+  page-break-inside: avoid;
+
+  .card-thumbnail {
+    align-self: center;
+    flex-shrink: 0;
+    width: 50px;
+  }
+
+  .card-body {
+    margin-left: $gutter;
+    border-left: 1px solid $border-color;
+    padding-left: $gutter;
+
+    .card-header {
+      font-weight: bold;
+    }
+
+    .card-description {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card-group {
+  padding: $gutter;
+  border-radius: 3px;
+  margin-bottom: $gutter;
+  box-shadow: $border-color 1px 1px 6px;
+  page-break-inside: avoid;
+
+  .card-group-header {
+    border-bottom: 1px solid $border-color;
+    padding: 2px;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .card {
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 0;
+
+    .card-body {
+      padding-top: $gutter;
+    }
+  }
+}
+
+.cards-container {
+  >.card:last-child,
+  >.card-group:last-child {
+    margin-bottom: $spacing-unit / 2;
+  }
+}

@@ -2,17 +2,25 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    background: white;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    box-shadow: $grey-color-light 1px 1px 6px;
+    min-height: $site-header-height;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+    // Sticky header
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+
+    .wrapper {
+      max-width: initial;
+    }
 }
 
 .site-title {
     font-size: 26px;
-    line-height: 56px;
+    line-height: $site-header-height;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
@@ -25,7 +33,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: $site-header-height;
 
     .menu-icon {
         display: none;
@@ -93,7 +101,7 @@
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    padding: $spacing-unit / 2 0;
 }
 
 .footer-heading {
@@ -118,6 +126,10 @@
     float: left;
     margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
+
+    &.float-right {
+      float: right;
+    }
 }
 
 .footer-col-1 {
@@ -162,11 +174,19 @@
  * Page content
  */
 .page-content {
+    margin-top: $site-header-height;
     padding: $spacing-unit 0;
+
+    &.is-landing {
+      height: calc(100% - #{$site-header-height * 2});
+      overflow-y: auto;
+      display: flex;
+      align-items: center;
+    }
 }
 
 .page-heading {
-    font-size: 20px;
+    font-size: 32px;
 }
 
 .post-list {
@@ -195,42 +215,36 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+    border-bottom: 1px solid $grey-color-light;
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: 32px;
     letter-spacing: -1px;
     line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
+      font-size: 24px;
+      border-bottom: 1px solid $grey-color-light;
     }
 
     h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
+      font-size: 20px;
+      border-bottom: 1px solid $grey-color-light;
     }
 
     h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+      font-size: 16px;
     }
+}
+
+// Hide disqus on print
+@media print {
+  #disqus_thread {
+    display: none;
+  }
 }

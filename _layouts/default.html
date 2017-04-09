@@ -7,13 +7,17 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="page-content {% if page.isLanding %} is-landing {% endif %}">
+      <div class="wrapper content">
         {{ content }}
       </div>
     </div>
 
-    {% include footer.html %}
+    {% if page.isLanding %}
+      {% include mini-footer.html %}
+    {% else %}
+      {% include footer.html %}
+    {% endif %}
 
   </body>
 

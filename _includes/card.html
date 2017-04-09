@@ -1,0 +1,13 @@
+<article class="{{ include.data.className | default: '' }} card">
+  <div class="card-thumbnail">
+    <a href="{{ include.data.link }}" target="_blank">
+      <img src="{{ site.url }}{{ include.data.thumbnail }}" alt="{{ include.data.name }}"/>
+    </a>
+  </div>
+  <div class="card-body">
+    <header class="card-header">
+      <a href="{{ include.data.link }}" target="_blank">{{ include.data.name }}</a>
+    </header>
+    <p class="card-description">{{ include.data.description }}</p>
+  </div>
+</article>

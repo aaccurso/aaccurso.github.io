@@ -1,0 +1,53 @@
+$language-color: lightgray;
+$black: black;
+$white: white;
+$javascript-color: #F1DC41;
+$java-color: #FF0000;
+$CSharp: #691C7C;
+$Go: #71CEDF;
+
+.github-repo.card {
+  .card-thumbnail {
+    img {
+      border-radius: 3px;
+    }
+  }
+
+  .card-body {
+    .repo-language {
+      border-radius: 3px;
+      font-size: x-small;
+      padding: 2px 4px;
+      background: $language-color;
+
+      &.JavaScript {
+        background: $javascript-color;
+      }
+
+      &.Java {
+        background: $java-color;
+        color: $white;
+      }
+
+      &.C\# {
+        background: $CSharp;
+        color: $white;
+      }
+
+      &.Go {
+        background: $Go;
+      }
+
+      &.Shell {
+        background: $black;
+        color: $white;
+      }
+    }
+
+    .card-description {
+      .gh-emoji {
+        width: 20px;
+      }
+    }
+  }
+}

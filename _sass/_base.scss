@@ -23,6 +23,14 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: calc(100% - #{$site-header-height});
+}
+
 
 
 /**
@@ -42,6 +50,7 @@ ul, ol, dl, figure,
  */
 img {
     max-width: 100%;
+    max-height: 100%;
     vertical-align: middle;
 }
 
@@ -80,7 +89,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: 600;
 }
 
 
@@ -162,6 +171,11 @@ pre {
     padding-left: $spacing-unit;
     @extend %clearfix;
 
+    &.content {
+      width: 100%;
+      max-height: 100%;
+    }
+
     @include media-query($on-laptop) {
         max-width: -webkit-calc(800px - (#{$spacing-unit}));
         max-width:         calc(800px - (#{$spacing-unit}));
@@ -184,7 +198,10 @@ pre {
     }
 }
 
-
+.is-centered {
+  display: block;
+  text-align: center;
+}
 
 /**
  * Icons
@@ -201,4 +218,36 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+/**
+* Image icons
+*/
+img.icon {
+  width: 20px;
+}
+
+.site-title {
+  display: flex;
+
+  .avatar {
+    align-self: center;
+    margin-right: 10px;
+
+    img {
+      border-radius: 50%;
+      display: block;
+      transition: filter .5s;
+    }
+  }
+
+  &:hover {
+    img {
+      filter: grayscale(1);
+    }
+  }
+}
+
+.gist .gist-data {
+  max-height: 320px;
 }

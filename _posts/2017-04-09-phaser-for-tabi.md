@@ -1,0 +1,218 @@
+---
+layout: post
+title:  "Phaser.js for TABI"
+date:   2017-04-09 18:34:03
+categories: project gaming phaser seed open-source tabi
+---
+My experience with [Phaser.js](http://phaser.io/) for the TABI project started off in late 2014 by following this [amazing tutorial](http://www.codevinsky.com/phaser-2-0-tutorial-flappy-bird-part-5/) on how to create a game similar to Flappy Bird.
+
+The great thing was that the creator of the tutorial used a [yeoman generator for Phaser](https://github.com/8-uh/generator-phaser-official) to create the application.
+
+The generated app was already built upon amazing tools such as [Browserify](https://browserify.org) in order to modularize code for browsers, [JSHint](http://jshint.com/) to detect errors and potential problems in the code and [EditorConfig](https://editorconfig.org/) for maintaining consistent file formats and coding styles between different editors and IDEs.
+
+It also provided an **initial architecture** for the game, based on states and prefabs, which heavily depended on JavaScript prototypes to give the app an OOP nature.
+
+This was awesome because it provided the necessary structure for the team to be able to have a mental image of all the components involved in the app and build upon it.
+
+## Mobile
+
+After finishing the tutorial, the first complex challenge we had to overcome was to bundle the app into an Android `apk` that could be installed in the TABIs, which had an **x86 processor** (as opposed to the more popular ARM architecture).
+
+### Crosswalk
+
+While investigating how to do that I came across [Crosswalk](https://crosswalk-project.org), a tool that generates an `apk` by wrapping the web application in an up-to-date WebView and let's you choose the architecture to build for.
+
+Crosswalk provides a way to keep up with the latest features released in Chromium and to don't fall back on performance. However, it doesn't give you an API to communicate with the host OS native features.
+
+And that's where [Cordova](https://cordova.apache.org/) comes in.
+
+### Cordova
+
+Cordova is a platform that allows to **reuse code across platforms** (Android, iOS, etc) and access native device APIs.
+
+We were in need of some native features for most games: [Take pictures with the camera](https://github.com/apache/cordova-plugin-camera), [Text to speech](https://github.com/vilic/cordova-plugin-tts), [Native keyboard](com.ionic.keyboard), [Canvas to image](org.devgeeks.Canvas2ImagePlugin), [Access files](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-file/) and [In App Browser](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/).
+
+But there was a major issue back then: _Cordova had no built-in integration with Crosswalk_.
+
+So we had to use a tool called `cordova-android-crosswalk` which provided a custom integration between Cordova and Crosswalk.
+
+It was a pleasure to [contribute](https://github.com/tylerbuchea/cordova-android-crosswalk/commits?author=aaccurso) to this small tool (which is now deprecated), because [tylerbuchea](https://github.com/tylerbuchea) was really open to merge PRs that satisfied other people's needs.
+
+<github-repo-card owner="tylerbuchea" name="cordova-android-crosswalk">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
+
+> Later on we migrated to the cordova plugin, which made things easier. Now crosswalk is yet another easy to install plugin: `cordova plugin add cordova-plugin-crosswalk-webview`.
+
+## Phaser Seed
+
+As we made progress on the first game, we started to add some more tools, [Grunt](https://gruntjs.com/) tasks and we mutated the initial architecture to something that made sense for our projects.
+
+So when we started developing the second game, I thought we should have a **starterkit project** in order to kick off games quicker and based on an architecture consistent across games.
+
+That's when _PhaserSeed_ came to life, with all the configuration and common components needed for building our games such as: i18n, local storage management, user game settings, common navigation, modals, sound management, assets preloading, environment specific configuration, etc.
+
+<github-repo-card name="phaser-seed">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
+
+> This is an outdated version of the seed we ended up using for our late games, but it's still useful to have as a starting point.
+
+## Release Management
+
+Versioning any piece of software is very important for a number of reasons such as the ability to compare two snapshots of the same software, link the version in an issue tracker, include a specific version as a dependency of another project, among [others](https://developer.android.com/studio/publish/versioning.html).
+
+When building an application that will be installed by the final user, it's essential to have a release management strategy that will allow [distribution](#distribution) of a version and a **history of versions** to let the QA team install a specific version of the app.
+
+In our case, we decided to use [Semantic Versioning](http://semver.org/) for our version names.
+
+Manually bumping an application's version files is a real hassle. That's why I started looking for a tool that could do that for us. At that moment I came across [grunt-bump](https://github.com/vojtajina/grunt-bump), which is great (if you are using good old Grunt) for bumping version files such as `package.json` and `bower.json`.
+
+However, that wasn't enough because we were dealing with Cordova's `config.xml` version file, which is used for determining the Android package version.
+
+That's why I decided to extend the tool to support bumping Cordova based projects.
+
+<github-repo-card name="grunt-bump-cordova">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
+
+> If you are managing your tasks with Gulp you can use [gulp-cordova-bump](https://github.com/MichaelTaylor3D/gulp-cordova-bump) which basically provides the same functionality.
+
+### Git
+
+Since we were a medium sized team, I though it would be a good idea to go with a **robust git flow** for managing feaure branches, hotfixes and releases.
+
+So we included [gitflow](https://github.com/nvie/gitflow) in all our repositories.
+
+Also we configured a pre-commit hook to check for _jscs_ and _jshint_ errors. We went with the strategy _"you can't commit code that doesn't comply with the style rules"_, which may seem extreme but it gave us good results, especially when adding new team members.
+
+> If the timeline hadn't been so tight, instead of a pre-commit I'd have preferred to setup a job in Jenkins to check for these rules before integrating to development.
+
+### Jenkins
+
+To **automate the build process** we decided to use our company's Jenkins server hosted on an Ubuntu Server.
+
+We created one job per application which performed the build of latest master unless a specific version tag was given.
+
+In order for Jenkins to be able to **build an Android Cordova application** it was necessary to:
+
+- Download the standalone Android tools and set the necessary environment variables.
+- Install the correct Android SDK with `adb`.
+- Install Cordova globally with `npm install -g cordova` (this is not necessary if you have cordova as a dev-dependency in your project, since you can create a npm script).
+
+> And that's almost all there is to it, you can follow these [instructions](https://www.digitalocean.com/community/tutorials/how-to-build-android-apps-with-jenkins) for more details.
+
+Then our jobs would execute a Shell script similar to:
+
+{% gist aaccurso/388b83956e83c2ac675988e346f71f01 %}
+
+> I found this useful [gist](https://gist.github.com/escapedcat/2bde893b784147248c2d0f199394dc65) to build iOS applications on Linux which may be worth trying if you need to build for iOS.
+
+### Distribution
+
+When distributing a mobile application for production there are a few things to consider, such as having a developer account in Google Play (which in our case was provided by the client), releasing the package in production mode and signing the package with a keystore.
+
+However, during the development lifecycle we had a **distribution strategy** to allow for the client and the QA team to access a new version of each application for each sprint.
+
+#### TestFairy
+
+For testing purposes, we chose [TestFairy](https://testfairy.com/) as the **distribution platform** for our mobile applications.
+
+And we used a modified version of it's CLI uploader tool in order to upload the `apk` from the Jenkins job (there was no Jenkins plugin at the moment).
+
+This would notify QA and the client whenever a new version of the applications was released and TestFairy handled the distribution and installation process for us.
+
+<github-repo-card owner="testfairy" name="command-line-uploader">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
+
+> However, if you use Jenkins I'd recommend you try the [TestFairy Plugin](https://wiki.jenkins-ci.org/display/JENKINS/TestFairy+Plugin) which is much more user friendly.
+
+#### Google Drive
+
+And to distribute the production ready releases with the client we decided to upload them to a **shared folder in GDrive**.
+
+At first we manually uploaded the `apk`s by dragging and dropping into the browser's GDrive tab. But this turned out to be cumbersome when we increased the number of games we had.
+
+Luckily, we found a CLI tool to automate the process.
+
+<github-repo-card owner="prasmussen" name="gdrive">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
+
+And we wrote a script similar to the one below to upload the packages.
+
+{% gist aaccurso/fe0d347b292022eabeb92eebd89d1af5 %}
+
+## Open Source and Community
+
+As I'm sure you've noticed by now, I've been mentioning technologies that share one main property: they are all **open source** and some of them are **community driven**.
+
+And it is my belief that as a consumer of this abundant amount of open source technology, it's essential that we as a software community _contribute_ to it.
+
+That's why I like getting involved in the [forums](http://www.html5gamedevs.com/profile/11049-aaccurso/) and channels related to the technologies I use.
+
+Whenever I can I try to find ways of abstracting the problems I encounter, in order to come up with solutions that will help other people that may have similar scenarios.
+
+In the case of Phaser, I saw an opportunity to contribute to its community by enhancing a plugin to create cool transitions between states, and it all started by reading a [post](http://www.html5gamedevs.com/topic/10015-phaser-213-and-state-transition-plugin/?do=findComment&comment=64638).
+
+<github-repo-card name="phaser-state-transition-plugin">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
+
+> The [original plugin](https://github.com/cristianbote/phaser-state-transition) has been upgraded so I recommend you use that one instead.
+
+For Cordova, apart from `gulp-cordova-bump` and `cordova-android-crosswalk` I thought that sharing the module we had to save a Canvas as an image could be of help to other people.
+
+<github-repo-card name="canvas-image-saver">
+  <div class="loading">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</github-repo-card>
+
+## Conclusion
+
+Lots of tools and technologies were involved in this project.
+
+The **discovery and learning** process of all of them was really exciting.
+
+And it wasn't until writing this post that I realized how much of them have been upgraded or replaced with new ones.
+
+Take for example the core of our build process. If we had to do this today, we probably would've chosen [Webpack](https://webpack.github.io/) as our module bundler, [babel](https://babeljs.io/) to get all the benefits from ES6, [eslint](http://eslint.org/), [no Bower](https://medium.com/@nickheiner/why-my-team-uses-npm-instead-of-bower-eecfe1b9afcb) (just npm modules and [scripts](https://css-tricks.com/why-npm-scripts/)) and maybe [phaser-es6-webpack](https://github.com/lean/phaser-es6-webpack) as the starterkit.
+
+And I think that's one of the things I enjoy most of our line of work.
+
+> Learning new stuff never ends
