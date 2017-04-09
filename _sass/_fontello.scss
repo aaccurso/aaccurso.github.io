@@ -20,7 +20,7 @@
 }
 */
  
- [class^="icon-"]::before, [class*=" icon-"]::before {
+ [class^="icon-"]::after, [class*=" icon-"]::after {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -54,19 +54,19 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-mail::before { content: '\e800'; } /* '' */
-.icon-book-open::before { content: '\e801'; } /* '' */
-.icon-heart::before { content: '\e803'; } /* '' */
-.icon-heart-empty::before { content: '\e804'; } /* '' */
-.icon-feather::before { content: '\e802'; margin-right: 0; } /* '' */
-.icon-twitter::before { content: '\f099'; } /* '' */
-.icon-facebook::before { content: '\f09a'; } /* '' */
-.icon-github-circled::before { content: '\f09b'; } /* '' */
-.icon-linkedin::before { content: '\f0e1'; } /* '' */
-.icon-github::before { content: '\f113'; } /* '' */
-.icon-mail-squared::before { content: '\f199'; } /* '' */
-.icon-meetup::before { content: '\f2e0'; } /* '' */
-.icon-twitter-squared::before { content: '\f304'; } /* '' */
-.icon-facebook-squared::before { content: '\f308'; } /* '' */
-.icon-linkedin-squared::before { content: '\f30c'; } /* '' */
-.icon-soundcloud::before { content: '\f348'; } /* '' */
+.icon-mail::after { content: '\e800'; } /* '' */
+.icon-book-open::after { content: '\e801'; } /* '' */
+.icon-heart::after { content: '\e803'; } /* '' */
+.icon-heart-empty::after { content: '\e804'; } /* '' */
+.icon-feather::after { content: '\e802'; margin-right: 0; } /* '' */
+.icon-twitter::after { content: '\f099'; } /* '' */
+.icon-facebook::after { content: '\f09a'; } /* '' */
+.icon-github-circled::after { content: '\f09b'; } /* '' */
+.icon-linkedin::after { content: '\f0e1'; } /* '' */
+.icon-github::after { content: '\f113'; } /* '' */
+.icon-mail-squared::after { content: '\f199'; } /* '' */
+.icon-meetup::after { content: '\f2e0'; } /* '' */
+.icon-twitter-squared::after { content: '\f304'; } /* '' */
+.icon-facebook-squared::after { content: '\f308'; } /* '' */
+.icon-linkedin-squared::after { content: '\f30c'; } /* '' */
+.icon-soundcloud::after { content: '\f348'; } /* '' */
