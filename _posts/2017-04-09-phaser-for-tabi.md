@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Phaser for TABI"
-date:   2017-02-18 15:34:03
+title:  "Phaser.js for TABI"
+date:   2017-04-09 18:34:03
 categories: project gaming phaser seed open-source tabi
 ---
-My experience with Phaser for the TABI project started off in late 2014 by following this [amazing tutorial](http://www.codevinsky.com/phaser-2-0-tutorial-flappy-bird-part-5/) on how to create a game similar to Flappy Bird.
+My experience with [Phaser.js](http://phaser.io/) for the TABI project started off in late 2014 by following this [amazing tutorial](http://www.codevinsky.com/phaser-2-0-tutorial-flappy-bird-part-5/) on how to create a game similar to Flappy Bird.
 
 The great thing was that the creator of the tutorial used a [yeoman generator for Phaser](https://github.com/8-uh/generator-phaser-official) to create the application.
 

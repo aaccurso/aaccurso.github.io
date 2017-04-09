@@ -13,7 +13,9 @@
       </div>
     </div>
 
-    {% if !post.isLanding %}
+    {% if page.isLanding %}
+      {{ site.time | date_to_string }}
+    {% else %}
       {% include footer.html %}
     {% endif %}
 
