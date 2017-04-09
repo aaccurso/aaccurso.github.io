@@ -5,7 +5,7 @@
     background: white;
     border-bottom: 1px solid $grey-color-light;
     box-shadow: $grey-color-light 1px 1px 6px;
-    min-height: 56px;
+    min-height: $site-header-height;
 
     // Sticky header
     position: fixed;
@@ -20,7 +20,7 @@
 
 .site-title {
     font-size: 26px;
-    line-height: 56px;
+    line-height: $site-header-height;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
@@ -33,7 +33,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: $site-header-height;
 
     .menu-icon {
         display: none;
@@ -174,8 +174,15 @@
  * Page content
  */
 .page-content {
-    margin-top: 56px;
+    margin-top: $site-header-height;
     padding: $spacing-unit 0;
+
+    &.is-landing {
+      height: calc(100% - #{$site-header-height * 2});
+      overflow-y: auto;
+      display: flex;
+      align-items: center;
+    }
 }
 
 .page-heading {
