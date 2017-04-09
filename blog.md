@@ -2,6 +2,7 @@
 layout: default
 title: Blog
 permalink: /blog/
+isLanding: true
 ---
 
 <div class="home">
