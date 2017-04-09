@@ -1,6 +1,7 @@
 ---
 layout: default
 isLanding: true
+isHome: true
 ---
 
 # Hi, I'm Alan.
