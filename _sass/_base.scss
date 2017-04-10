@@ -172,7 +172,7 @@ pre {
     @extend %clearfix;
 
     &.content {
-      width: 100%;
+      width: calc(100% - #{$spacing-unit});
       max-height: 100%;
     }
 

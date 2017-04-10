@@ -129,6 +129,7 @@
 
     &.float-right {
       float: right;
+      text-align: right;
     }
 }
 
@@ -162,9 +163,8 @@
 
 @include media-query($on-palm) {
     .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
     }
 }
 
@@ -182,6 +182,10 @@
       overflow-y: auto;
       display: flex;
       align-items: center;
+    }
+
+    @include media-query($on-palm) {
+      padding: $spacing-unit / 2 0;
     }
 }
 

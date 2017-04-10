@@ -1,6 +1,11 @@
 .mini-footer {
+  background: white;
   position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
+
+  .mini-footer-container {
+    padding: 0 $spacing-unit / 2;
+  }
 }
