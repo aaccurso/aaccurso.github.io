@@ -1,10 +1,10 @@
-# Hi, I'm Alan.
+## Hi, I'm Alan.
 
 I live in _Buenos Aires, Argentina_.
 
 This is my personal website where you can get to know me better.
 
-I'm a [Software Engineer][Linkedin]{:.icon-linkedin target="_blank"} and I spend a lot of time [coding][Github]{:.icon-github target="_blank"}, leading teams, participating in meetings and [meetups][Meetup]{:.icon-meetup target="_blank"}, learning, [teaching][frontend-training]{:target="_blank"}, interviewing, coaching &amp; mentoring.
+I'm a [Software Engineer][Linkedin]{:.icon-linkedin target="_blank"} and I usually spend time [coding][Github]{:.icon-github target="_blank"}, leading teams, participating in meetings and [meetups][Meetup]{:.icon-meetup target="_blank"}, learning, [teaching][frontend-training]{:target="_blank"}, interviewing, coaching &amp; mentoring.
 
 I also like [reading][Goodreads]{:.icon-book-open target="_blank"}, [writing][blog]{:.icon-feather}, playing the [keyboards][SoundCloud]{:.icon-soundcloud target="_blank"} and soccer, among [other things][about-me].
 
