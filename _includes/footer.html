@@ -37,7 +37,7 @@
 
   </div>
   
-  {% assign hash = site.time | date_to_xmlschema | replace: '-', '' | replace: ':', '' %}
+  {% assign hash = site.time | date_to_xmlschema | replace: '-', '' | replace: ':', '' | truncate: 15, '' %}
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
   <script type="text/javascript" src="{{ '/js/main.js?' | prepend: site.baseurl | append: hash }}"></script>
 
