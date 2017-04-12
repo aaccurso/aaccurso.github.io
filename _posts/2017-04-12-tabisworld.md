@@ -18,7 +18,7 @@ The client was an electronic manufacturer that sold tablets, among other things.
 
 So the idea was to start selling the tablets to kindergartens so teachers could have technological aid when teaching their 4-6 year-old students. And in order to do that, they wanted to provide **educational games** that would already be installed in the TABIs.
 
-[![Tabisworld]({{ site.url }}/assets/tabisworld/tabisworld.jpg)][tabisworld]{:.is-centered style="height: 200px;"}
+[![Tabisworld]({{ site.url }}/assets/tabisworld/tabisworld.jpg)][tabisworld]{:.is-centered style="height: 200px;" target="_blank"}
 
 ## Team
 
