@@ -125,4 +125,3 @@ It was a pleasure to contribute to the education of children by developing games
 [mobile-performance]: http://www.html5gamedevs.com/topic/14036-how-to-improve-performance-on-mobile/
 [phaser-for-tabi]: {{ site.baseurl }}{% post_url 2017-04-09-phaser-for-tabi %}
 [Unity]: https://unity3d.com/
-[unity-for-tabi]: {{ site.baseurl }}
