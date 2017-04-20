@@ -70,7 +70,7 @@ That's when _PhaserSeed_ came to life, with all the configuration and common com
 
 ## Release Management
 
-Versioning any piece of software is very important for a number of reasons such as the ability to compare two snapshots of the same software, link the version in an issue tracker, include a specific version as a dependency of another project, among [others](https://developer.android.com/studio/publish/versioning.html).
+Versioning any piece of software is very important for a number of reasons, such as the ability to compare two snapshots of the same software, link the version in an issue tracker, include a specific version as a dependency of another project, among [others](https://developer.android.com/studio/publish/versioning.html).
 
 When building an application that will be installed by the final user, it's essential to have a release management strategy that will allow [distribution](#distribution) of a version and a **history of versions** to let the QA team install a specific version of the app.
 
@@ -107,7 +107,7 @@ Also we configured a pre-commit hook to check for _jscs_ and _jshint_ errors. We
 
 To **automate the build process** we decided to use our company's Jenkins server, hosted on an Ubuntu Server.
 
-We created one job per application which performed the build of latest master unless a specific version tag was given.
+We created one job per application, which performed the build of the latest master branch unless a specific version tag was given.
 
 In order for Jenkins to be able to **build an Android Cordova application** it was necessary to:
 
@@ -121,7 +121,7 @@ Then our jobs would execute a Shell script similar to:
 
 {% gist aaccurso/388b83956e83c2ac675988e346f71f01 %}
 
-> I found this useful [gist](https://gist.github.com/escapedcat/2bde893b784147248c2d0f199394dc65) to build iOS applications on Linux which may be worth trying if you need to build for iOS.
+> I found this useful [gist](https://gist.github.com/escapedcat/2bde893b784147248c2d0f199394dc65) to build iOS applications on Linux, which may be worth trying if you need to build for iOS.
 
 ### Distribution
 
@@ -133,9 +133,9 @@ However, during the development lifecycle we had a **distribution strategy** to 
 
 For testing purposes, we chose [TestFairy](https://testfairy.com/) as the **distribution platform** for our mobile applications.
 
-And we used a modified version of it's CLI uploader tool in order to upload the `apk` from the Jenkins job (there was no Jenkins plugin at the moment).
+We used a modified version of it's CLI uploader tool in order to upload the `apk` from the Jenkins job (there was no Jenkins plugin at the moment).
 
-This would notify QA and the client whenever a new version of the applications was released and TestFairy handled the distribution and installation process for us.
+This would notify QA and the client whenever a new version of the applications was released, and TestFairy handled the distribution and installation process for us.
 
 <github-repo-card owner="testfairy" name="command-line-uploader">
   <div class="loading">
@@ -152,7 +152,7 @@ This would notify QA and the client whenever a new version of the applications w
 
 And to distribute the production ready releases with the client we decided to upload them to a **shared folder in GDrive**.
 
-At first we manually uploaded the `apk`s by dragging and dropping into the browser's GDrive tab. But this turned out to be cumbersome when we increased the number of games we had.
+At first, we manually uploaded the `apk`s by dragging and dropping into the browser's GDrive tab. But this turned out to be cumbersome when we increased the number of games we had to manage.
 
 Luckily, we found a CLI tool for GDrive to help automate the process.
 
@@ -177,9 +177,9 @@ And it is my belief that as a consumer of this abundant amount of open source te
 
 That's why I like getting involved in the [forums](http://www.html5gamedevs.com/profile/11049-aaccurso/) and channels related to the technologies I use.
 
-Whenever I can I try to find ways of abstracting the problems I encounter, in order to come up with solutions that will help other people that may have similar scenarios.
+Whenever I can, I try to find ways of abstracting the problems I encounter, in order to come up with solutions that will help other people that may have similar scenarios.
 
-In the case of Phaser, a colleague and I saw an opportunity to contribute to its community by enhancing a plugin to create cool transitions between states, and it all started by reading a [post](http://www.html5gamedevs.com/topic/10015-phaser-213-and-state-transition-plugin/?do=findComment&comment=64638).
+In the case of Phaser, a colleague and I saw an opportunity to contribute to its community by enhancing a plugin to create cool transitions between states, and it all started by reading a [forum post](http://www.html5gamedevs.com/topic/10015-phaser-213-and-state-transition-plugin/?do=findComment&comment=64638).
 
 <github-repo-card name="phaser-state-transition-plugin">
   <div class="loading">

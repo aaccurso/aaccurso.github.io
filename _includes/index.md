@@ -2,13 +2,11 @@
 
 I live in _Buenos Aires, Argentina_.
 
-This is my personal website where you can get to know me better.
-
 I'm a [Software Engineer][Linkedin]{:.icon-linkedin target="_blank"} and I usually spend time [coding][Github]{:.icon-github target="_blank"}, leading teams, participating in meetings and [meetups][Meetup]{:.icon-meetup target="_blank"}, learning, [teaching][frontend-training]{:target="_blank"}, interviewing, coaching &amp; mentoring.
 
 I also like [reading][Goodreads]{:.icon-book-open target="_blank"}, [writing][blog]{:.icon-feather}, playing the [keyboards][SoundCloud]{:.icon-soundcloud target="_blank"} and soccer, among [other things][about-me].
 
-You can contact me via [Twitter]{:.icon-twitter target="_blank"} / [email]({{ site.email }}){:.icon-mail href="mailto:{{ site.email }}"} to ask me a question or just to say hi.
+You can contact me via [Twitter]{:.icon-twitter target="_blank"} or [email]({{ site.email }}){:.icon-mail href="mailto:{{ site.email }}"} to ask me a question or just to say hi.
 
 I'd love to chat with you!
 
