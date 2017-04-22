@@ -13,7 +13,7 @@ I'd love to chat with you!
 [Linkedin]: https://www.linkedin.com/in/aaccurso
 [Github]: http://github.com/aaccurso
 [Meetup]: https://www.meetup.com/members/139833012
-[frontend-training]: https://github.com/Graion/frontend-training
+[frontend-training]: https://graion.github.io/frontend-training/
 [Goodreads]: https://www.goodreads.com/user/show/31983601-alan-accurso
 [Twitter]: https://twitter.com/aaaccurso
 [SoundCloud]: https://soundcloud.com/alan-accurso
