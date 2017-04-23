@@ -50,6 +50,10 @@ permalink: /about-me/
 
 {% include youtube.html videoId="GlnLpYgN8oo" %}
 
+## Soccer
+
+[![Independiente](https://upload.wikimedia.org/wikipedia/commons/d/db/Escudo_del_Club_Atl%C3%A9tico_Independiente.svg){:width="100px" .is-centered}](https://g.co/kgs/ZAs9vj){:target="_blank"}
+
 ## Open Source
 
 {% include github-repo-card.html name="phaser-state-transition-plugin" %}
