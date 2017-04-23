@@ -38,14 +38,7 @@ So we had to use a tool called `cordova-android-crosswalk` which provided a cust
 
 It was a pleasure to [contribute](https://github.com/tylerbuchea/cordova-android-crosswalk/commits?author=aaccurso) to this small tool (which is now deprecated), because [tylerbuchea](https://github.com/tylerbuchea) was really open to merge PRs that satisfied other people's needs.
 
-<github-repo-card owner="tylerbuchea" name="cordova-android-crosswalk">
-  <div class="loading">
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-  </div>
-</github-repo-card>
+{% include github-repo-card.html owner="tylerbuchea" name="cordova-android-crosswalk" %}
 
 > Later on we migrated to the cordova plugin, which made things easier. Now crosswalk is yet another easy to install plugin: `cordova plugin add cordova-plugin-crosswalk-webview`.
 
@@ -57,14 +50,7 @@ So when we started developing the second game, I thought we should have a **star
 
 That's when _PhaserSeed_ came to life, with all the configuration and common components needed for building our games such as: i18n, local storage management, user game settings, common navigation, modals, sound management, assets preloading, environment specific configuration, etc.
 
-<github-repo-card name="phaser-seed">
-  <div class="loading">
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-  </div>
-</github-repo-card>
+{% include github-repo-card.html name="phaser-seed" %}
 
 > This is an outdated version of the seed we ended up using for our late games, but it's still useful to have as a starting point.
 
@@ -82,14 +68,7 @@ However, that wasn't enough because we were dealing with Cordova's `config.xml` 
 
 That's why I decided to extend the tool to support bumping Cordova based projects.
 
-<github-repo-card name="grunt-bump-cordova">
-  <div class="loading">
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-  </div>
-</github-repo-card>
+{% include github-repo-card.html name="grunt-bump-cordova" %}
 
 > If you are managing your tasks with Gulp you can use [gulp-cordova-bump](https://github.com/MichaelTaylor3D/gulp-cordova-bump) which basically provides the same functionality.
 
@@ -137,14 +116,7 @@ We used a modified version of it's CLI uploader tool in order to upload the `apk
 
 This would notify QA and the client whenever a new version of the applications was released, and TestFairy handled the distribution and installation process for us.
 
-<github-repo-card owner="testfairy" name="command-line-uploader">
-  <div class="loading">
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-  </div>
-</github-repo-card>
+{% include github-repo-card.html owner="testfairy" name="command-line-uploader" %}
 
 > However, if you use Jenkins I'd recommend you try the [TestFairy Plugin](https://wiki.jenkins-ci.org/display/JENKINS/TestFairy+Plugin) which is much more user friendly.
 
@@ -156,14 +128,7 @@ At first, we manually uploaded the `apk`s by dragging and dropping into the brow
 
 Luckily, we found a CLI tool for GDrive to help automate the process.
 
-<github-repo-card owner="prasmussen" name="gdrive">
-  <div class="loading">
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-  </div>
-</github-repo-card>
+{% include github-repo-card.html owner="prasmussen" name="gdrive" %}
 
 And we wrote a script similar to the one below to upload the packages.
 
@@ -181,27 +146,13 @@ Whenever I can, I try to find ways of abstracting the problems I encounter, in o
 
 In the case of Phaser, a colleague and I saw an opportunity to contribute to its community by enhancing a plugin to create cool transitions between states, and it all started by reading a [forum post](http://www.html5gamedevs.com/topic/10015-phaser-213-and-state-transition-plugin/?do=findComment&comment=64638).
 
-<github-repo-card name="phaser-state-transition-plugin">
-  <div class="loading">
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-  </div>
-</github-repo-card>
+{% include github-repo-card.html name="phaser-state-transition-plugin" %}
 
 > The [original plugin](https://github.com/cristianbote/phaser-state-transition) has been upgraded so I recommend you use that one instead.
 
 For Cordova, apart from `gulp-cordova-bump` and `cordova-android-crosswalk` I thought that sharing the module we had to save a Canvas element as an image could be of help to other people.
 
-<github-repo-card name="canvas-image-saver">
-  <div class="loading">
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-  </div>
-</github-repo-card>
+{% include github-repo-card.html name="canvas-image-saver" %}
 
 > This one also involved a Cordova plugin for Android [Canvas2ImagePlugin](https://github.com/aaccurso/Canvas2ImagePlugin).
 
