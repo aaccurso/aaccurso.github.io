@@ -9,9 +9,9 @@ categories: project gaming phaser tabi
 
 Today I felt like writing about one of my greatest professional experiences.
 
-It all started one day when the CEO of the company I was working at had closed a deal on a project that consisted of **building 10 mobile games for kids**, and he had chosen me to be the _technical leader_ of the project.
+It all started one day when the CEO of the company I was working for had closed a deal on a project that consisted of **building 10 mobile games for kids**, and he had chosen me to be the _technical leader_ of the project.
 
-I remember I was finishing a small project at the moment so I was going to be free a few weeks before the new project's start, which was really convenient. And my previous leadership on a fullstack project had gone pretty well so the CEO thought it was a good opportunity to give me a chance at something bigger.
+I remember I was finishing a small project at that moment, so I was going to be free a few weeks before the new project's kick off, which was really convenient. And my previous leadership on a fullstack project had gone pretty well so the CEO thought it was a good opportunity to give me a chance at something bigger.
 
 ## Meet TABI
 
