@@ -19,7 +19,7 @@ It was my first experience travelling abroad and it blew my head.
 We had a great time visiting: Rome, Florence, Venice, Prague, Berlin, Amsterdam, Bruges, Paris and London.
 
 ![Rome, Italy](https://fb-s-d-a.akamaihd.net/h-ak-xpt1/v/t1.0-9/13240044_1370975776254509_7561930312171630350_n.jpg?oh=8ad6faf4c8c1716da0b738af3e5b968d&oe=59860255&__gda__=1502956482_3f0b0de58c78d7c0bf7e1d4ede4ec2fe){:.is-centered style="max-height: 500px" title="Rome, Italy"}
-_The country of my predecessors :D_
+_The country of my predecessors :D_{:.is-centered}
 
 ### Chicago, USA
 
@@ -28,7 +28,7 @@ A few months after the Eurotrip, an opportunity presented to travel to Chicago f
 I stayed there for a month and I fell in love with the multi-level _windy city_.
 
 ![Chicago, USA](https://scontent-gru2-2.xx.fbcdn.net/v/t1.0-9/13010745_1336671816351572_8321092981648148732_n.jpg?oh=720064be88e1401f6d4e9c54099d1200&oe=598101BB){:title="Chicago, USA"}
-_The beautiful Chicago River_
+_The beautiful Chicago River_{:.is-centered}
 
 ### New York, USA
 
@@ -37,46 +37,46 @@ And after that I travelled to NYC on 2 ocassions (again work related trips), the
 On both trips I stayed for 3 weeks, and I saw it as a great opportunity to visit other close cities.
 
 ![Wall Street, New York](https://scontent-gru2-2.xx.fbcdn.net/v/t31.0-8/15800790_10211455960134111_3306919316352222283_o.jpg?oh=3b2583ff1d0cb9cdfa5b94572a65919a&oe=5999EB11){:.is-centered style="max-height: 500px" title="Wall Street, USA"}
-_With my girlfriend at the Wall Street christmas tree_
+_With my girlfriend at the Wall Street christmas tree_{:.is-centered}
 
 How can anyone not love <strike>New York</strike> Brooklyn?
 
 ![Brooklyn, New York](https://scontent-gru2-2.xx.fbcdn.net/v/t1.0-9/14322234_1490541944297891_6471942833661219882_n.jpg?oh=550d211eaf52211d0e456a3336b17dd5&oe=5980849C){:title="Brooklyn, USA"}
-_Dumbo <3_
+_Dumbo <3_{:.is-centered}
 
 #### Washington, USA
 
 ![Washington, USA](https://fb-s-c-a.akamaihd.net/h-ak-xtf1/v/t1.0-9/14355553_1503430779675674_7581548358850866839_n.jpg?oh=5cfe99d49447706542673a7aba95e813&oe=5977D928&__gda__=1501243543_d7ea7132518527b81c22cfd43d666be9){:title="Washington, USA"}
-_At the Washington Monument_
+_At the Washington Monument_{:.is-centered}
 
 #### Boston, USA
 
 ![Boston, USA](https://fb-s-b-a.akamaihd.net/h-ak-xta1/v/t1.0-9/16105718_1664907320194685_5002691863212391358_n.jpg?oh=fafc5342b546d5358ae42781444a52ba&oe=597E5609&__gda__=1502711779_1a8e5754c798baf33fc24ebaa1444c31){:title="Boston, USA"}
-_Is it London? No, but quite_
+_Is it London? No, but quite_{:.is-centered}
 
 ### Machupichu, Perú
 
 One of the most challenging trips of my life.
 
-Together with 5 more friends, we walked the 4-day Inca Trail to Machupichu.
+Together with 5 more friends, we walked the **4-day Inca Trail to Machupichu**.
 
 ![Machupichu, Perú](https://fb-s-b-a.akamaihd.net/h-ak-xta1/v/t1.0-9/14980772_1574808875871197_7731473607306592744_n.jpg?oh=16400aff31214088b42e2ab01d683276&oe=598F54BA&__gda__=1501431888_40818ee4fe3028e28bded434d23528e8){:title="Machupichu, Perú"}
-_Breathtaking, right?_
+_Breathtaking, right?_{:.is-centered}
 
 ![Inca Trail, Perú](https://fb-s-a-a.akamaihd.net/h-ak-xtp1/v/t1.0-9/15056401_1574232179262200_1716698721993819333_n.jpg?oh=87d01b1682d60fedf557e0b6bfb41c91&oe=59868221&__gda__=1503212816_29c4070a3ca0a41a957edf7b8d4552bb){:title="Inca Trail, Perú"}
-_Warmiwañuska, 4125 meters above sea level_
+_Warmiwañuska, 4125 meters above sea level_{:.is-centered}
 
 ## Music
 
-I really enjoy playing the keyboards now and then.
+I really enjoy playing the **keyboards** now and then.
 
-Here is a video of me playing Rick Wakeman, whom I fan of.
+Here is a video of me playing _Rick Wakeman_, whom I fan of.
 
 {% include youtube.html videoId="T1KDl_nU0pU" %}
 
 You can listen to a few songs I recorded.
 
-{% include soundcloud.html trackId="221493933" %}
+{% include soundcloud.html trackId="221493933" auto_play=true %}
 
 {% include soundcloud.html trackId="121709610" %}
 
