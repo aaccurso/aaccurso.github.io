@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "Phaser.js for TABI"
+title: Phaser.js for TABI
+description: >
+  Using Phaser.js and open source technologies to build mobile games.
 date:   2017-04-09 18:34:03
 categories: project gaming phaser seed open-source tabi
 ---
+
 My experience with [Phaser.js](http://phaser.io/) for the TABI project (which consisted on building mobile games for a kind of tablet targeted to kids) started off in late 2014 by following this [amazing tutorial](http://www.codevinsky.com/phaser-2-0-tutorial-flappy-bird-part-5/) on how to create a game similar to the controversial Flappy Bird.
 
 ![Flappy Bird](http://i2.cdn.cnn.com/cnnnext/dam/assets/140204204156-flappy-bird-story-top.jpg){:.is-centered}{:style="height: 200px;"}
