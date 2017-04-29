@@ -243,6 +243,12 @@ img.icon {
     }
   }
 
+  .title {
+    &::after {
+      content: '';
+    }
+  }
+
   &:hover {
     img {
       filter: grayscale(1);

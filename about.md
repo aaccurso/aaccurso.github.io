@@ -10,20 +10,22 @@ permalink: /about-me/
 
 > “Traveling – it leaves you speechless, then turns you into a storyteller.” – Ibn Battuta
 
+If I had to choose one thing that really defines me, I'd say that's traveling – and everything that goes with it: visiting new places, meeting people from other cultures, escaping the routine, etc.
+
 ### Eurotrip
 
-After graduating from Engineering college, 2 friends and I decided to **travel throughout Europe for 1 month**.
+After graduating from Engineering school in Argentina, 2 friends and I decided to **travel around Europe for 1 month**.
 
-It was my first experience travelling abroad and it blew my head.
+It was my first experience travelling abroad and it _blew my head_.
 
-We had a great time visiting: Rome, Florence, Venice, Prague, Berlin, Amsterdam, Bruges, Paris and London.
+We had a great time visiting Rome, Florence, Venice, Prague, Berlin, Amsterdam, Bruges, Paris and London.
 
 ![Rome, Italy](https://fb-s-d-a.akamaihd.net/h-ak-xpt1/v/t1.0-9/13240044_1370975776254509_7561930312171630350_n.jpg?oh=8ad6faf4c8c1716da0b738af3e5b968d&oe=59860255&__gda__=1502956482_3f0b0de58c78d7c0bf7e1d4ede4ec2fe){:.is-centered style="max-height: 500px" title="Rome, Italy"}
-_The country of my predecessors :D_{:.is-centered}
+_Italy, the country of my predecessors :D_{:.is-centered}
 
 ### Chicago, USA
 
-A few months after the Eurotrip, an opportunity presented to travel to Chicago for work related reasons.
+A few months after the Eurotrip, an opportunity presented to travel to Chicago due to work reasons.
 
 I stayed there for a month and I fell in love with the multi-level _windy city_.
 
@@ -34,7 +36,7 @@ _The beautiful Chicago River_{:.is-centered}
 
 And after that I travelled to NYC on 2 ocassions (again work related trips), the first time during summer and the second during winter.
 
-On both trips I stayed for 3 weeks, and I saw it as a great opportunity to visit other close cities.
+On both trips I stayed around 3 weeks, and I saw it as a great opportunity to visit other cities which were close.
 
 ![Wall Street, New York](https://scontent-gru2-2.xx.fbcdn.net/v/t31.0-8/15800790_10211455960134111_3306919316352222283_o.jpg?oh=3b2583ff1d0cb9cdfa5b94572a65919a&oe=5999EB11){:.is-centered style="max-height: 500px" title="Wall Street, USA"}
 _With my girlfriend at the Wall Street christmas tree_{:.is-centered}
@@ -56,7 +58,7 @@ _Is it London? No, but quite_{:.is-centered}
 
 ### Machupichu, Perú
 
-One of the most challenging trips of my life.
+The most challenging trip of my life.
 
 Together with 5 more friends, we walked the **4-day Inca Trail to Machupichu**.
 
@@ -68,27 +70,32 @@ _Warmiwañuska, 4125 meters above sea level_{:.is-centered}
 
 ## Music
 
-I really enjoy playing the **keyboards** now and then.
-
-Here is a video of me playing _Rick Wakeman_, whom I fan of.
+I really enjoy playing the **keyboards** every now and then.
 
 {% include youtube.html videoId="T1KDl_nU0pU" %}
+_Here is a video of me playing Rick Wakeman_{:.is-centered}
 
-You can listen to a few songs I recorded.
+I also recorded a few songs for fun and uploaded them to SoundCloud.
 
-{% include soundcloud.html trackId="221493933" auto_play=true %}
+{% include soundcloud.html trackId="221493933" %}
 
 {% include soundcloud.html trackId="121709610" %}
 
-## Friends
-
-{% include youtube.html videoId="GlnLpYgN8oo" %}
-
 ## Soccer
+
+My favorite sport, which I like playing more than watching.
+
+In Argentina, I support Independiente, still known as _El Rey de Copas_.
+
+It may not be Barça, but Independiente has it's handful of international cups and a very rich history.
 
 [![Independiente](https://upload.wikimedia.org/wikipedia/commons/d/db/Escudo_del_Club_Atl%C3%A9tico_Independiente.svg){:width="100px" .is-centered}](https://g.co/kgs/ZAs9vj){:target="_blank"}
 
 ## Open Source
+
+I believe in contributing to the Open Source community.
+
+Here are a few examples of projects I open sourced.
 
 {% include github-repo-card.html name="phaser-state-transition-plugin" %}
 {% include github-repo-card.html name="grunt-bump-cordova" %}
