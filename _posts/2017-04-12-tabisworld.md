@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "TABIs World"
+title: TABIs World
+description: >
+  Leading a team into building mobile games for children.
 date:   2017-04-12 00:33:03
 categories: project gaming phaser tabi
 ---
+
 Today I felt like writing about one of my greatest professional experiences.
 
 It all started one day when the CEO of the company I was working for had closed a deal on a project that consisted of **building 10 mobile games for kids**, and he had chosen me to be the _technical leader_ of the project.
