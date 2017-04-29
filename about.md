@@ -70,7 +70,7 @@ _Warmiwañuska, 4125 meters above sea level_{:.is-centered}
 
 ## Music
 
-I really enjoy playing the **keyboards** every now and then.
+My dad taught me how to play the **keyboards** when I was a young boy, and I really enjoy playing every now and then.
 
 {% include youtube.html videoId="T1KDl_nU0pU" %}
 _Here is a video of me playing Rick Wakeman_{:.is-centered}
@@ -81,9 +81,9 @@ I also recorded a few songs for fun and uploaded them to SoundCloud.
 
 {% include soundcloud.html trackId="121709610" %}
 
-## Soccer
+## Sports
 
-My favorite sport, which I like playing more than watching.
+Soccer is my favorite sport, which I like playing more than watching.
 
 In Argentina, I support Independiente, still known as _El Rey de Copas_.
 
