@@ -7,7 +7,6 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://aaccurso.me" # the base hostname & protocol for your site
 twitter_username: aaaccurso
 github_username:  aaccurso
-prod: true
 exclude:
   - node_modules
   - _src
