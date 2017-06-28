@@ -1,13 +1,18 @@
 $gutter: 8px;
-$border-color: darkgrey;
+$border-color: $grey-color-light;
 
-.card {
-  display: flex;
+.card,
+.card-group {
+  background: white;
   padding: $gutter;
   border-radius: 3px;
   margin-bottom: $gutter;
   box-shadow: $border-color 1px 1px 6px;
   page-break-inside: avoid;
+}
+
+.card {
+  display: flex;
 
   .card-thumbnail {
     align-self: center;
@@ -31,12 +36,6 @@ $border-color: darkgrey;
 }
 
 .card-group {
-  padding: $gutter;
-  border-radius: 3px;
-  margin-bottom: $gutter;
-  box-shadow: $border-color 1px 1px 6px;
-  page-break-inside: avoid;
-
   .card-group-header {
     border-bottom: 1px solid $border-color;
     padding: 2px;
