@@ -15,7 +15,8 @@
   "scripts": {
     "build": "WEBPACK_ENV=build webpack",
     "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch",
-    "jekyll": "bundle exec jekyll serve --config _config.yml,_config.dev.yml"
+    "jekyll": "bundle exec jekyll serve --config _config.yml,_config.dev.yml",
+    "jekyll-with-drafts": "npm run jekyll -- --drafts"
   },
   "dependencies": {
     "autolinker": "^1.4.1",
