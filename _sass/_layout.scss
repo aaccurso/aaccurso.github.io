@@ -176,7 +176,7 @@
 .page-content {
     margin-top: $site-header-height;
     padding: $spacing-unit 0;
-    background-color: ghostwhite;
+    background-color: $page-color;
 
     &.is-landing {
       height: calc(100% - #{$site-header-height * 2});

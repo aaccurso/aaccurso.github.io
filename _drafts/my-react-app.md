@@ -2,6 +2,8 @@
 layout: post
 title:  "My React App"
 date:   2017-02-18 15:34:03
+description: >
+  Lessons learned from using React and it's ecosystem for half a year.
 categories: react create-react-app react-scripts linters git-hooks
 ---
 
@@ -22,6 +24,8 @@ And this is really important in order to stay up to date with the latest depende
 So what's the alternative to ejecting?
 
 ## Custom react-rcripts
+
+
 
 https://github.com/facebookincubator/create-react-app/issues/682
 https://github.com/aaccurso/create-react-app
