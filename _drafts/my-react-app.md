@@ -9,13 +9,19 @@ After working half a year with React and it's ecosystem, I though it was a good 
 
 ## Create React App
 
-On my first important project with React I decided to start off using the popular [create-react-app](https://github.com/facebookincubator/create-react-app) module, which let's you create react apps with no build configuration.
+On my first important project with React I decided to start off using the popular [`create-react-app`](https://github.com/facebookincubator/create-react-app) module, which let's you create react apps with no build configuration.
 
 Soon I realized the project had some specific configuration needs (like [integrating PIXI.js](https://github.com/pixijs/pixi.js/issues/1854) with the build process) so I decided to [`eject`](https://github.com/facebookincubator/create-react-app#converting-to-a-custom-setup) in order to have control over the project build.
 
 > Luckily, PIXI community figured out how to import the library as a ES6 module [in v4.1.1](https://github.com/pixijs/pixi.js/pull/2981).
 
-## Custom React-Scripts
+Ejecting from a Create React App means that you won't be able to upgrade [`react-scripts`](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#updating-to-new-releases) (the module that contains the build configuration) whenever the community releases a new version.
+
+And this is really important in order to stay up to date with the latest dependencies and with configuration updates, which believe me, you'll want to do on your project since each release includes important bug fixes and improvements.
+
+So what's the alternative to ejecting?
+
+## Custom react-rcripts
 
 https://github.com/facebookincubator/create-react-app/issues/682
 https://github.com/aaccurso/create-react-app
