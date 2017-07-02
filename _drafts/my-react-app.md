@@ -101,4 +101,14 @@ This is very useful when we are testing a new configuration, but we need to reme
 
 We've seen how to extend `react-scripts` without ejecting and not _"die"_ trying.
 
-I hope this is of help on your own projects like it was on mine.
+One thing I noticed that bothers me, is the fact that for most changes we need to duplicate the configuration in 2 webpack files: `webpack.config.dev.js` and `webpack.config.prod.js`.
+
+I hope the `create-react-app` (or even Webpack) comes up with a better approach to this in the future.
+
+Which will mean merging our custom `react-scripts` to a new version with breaking changes will take quite an effort.
+
+That's why a complete Git commit history and changelog are important to help in these matters.
+
+I hope this helps you on your own projects.
+
+Please leave any comment or suggestion below :D
