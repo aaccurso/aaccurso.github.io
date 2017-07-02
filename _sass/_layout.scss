@@ -183,6 +183,10 @@
       overflow-y: auto;
       display: flex;
       align-items: center;
+
+      @include media-query($on-palm) {
+        height: calc(100% - #{$site-header-height * 2} + 34px);
+      }
     }
 
     @include media-query($on-palm) {
