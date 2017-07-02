@@ -19,11 +19,15 @@ On my first important project with React I decided to start off using the popula
 
 Soon I realized the project had some __specific configuration needs__ (like [integrating PIXI.js](https://github.com/pixijs/pixi.js/issues/1854) with the build process) so I decided to [`eject`](https://github.com/facebookincubator/create-react-app#converting-to-a-custom-setup) in order to have control over the project build.
 
-> Luckily, PIXI community figured out how to import the library as a ES6 module [in v4.1.1](https://github.com/pixijs/pixi.js/pull/2981).
+At that moment, to integrate a library like [PIXI.js](http://www.pixijs.com) we had to configure Webpack like the following gist:
+
+{% gist mjackson/ecd3914ebee934f4daf4 %}
+
+> Luckily, PIXI community figured out how to import the library as a ES6 module [in v4.1.1](https://github.com/pixijs/pixi.js/pull/2981) so we don't need to have a special configuration anymore.
 
 Ejecting from a Create React App means that we won't be able to upgrade [`react-scripts`](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#updating-to-new-releases) (the module that contains the build configuration) whenever the community releases a new version.
 
-And this is really important in order to _stay up to date with the latest releases_ of each dependency and with build configuration updates, which believe me, we want to do in our projects since each release includes important bug fixes and improvements.
+And this is really important in order to __stay up to date with the latest releases__ of each dependency and with build configuration updates, which believe me, we want to do in our projects since each release includes important bug fixes and improvements.
 
 So, what's the alternative to ejecting?
 
@@ -35,7 +39,7 @@ Sounds easy, right? :D
 
 ### Fork create-react-app
 
-Well, before even starting to implement this approach, we need to understand that the `create-react-app` Git repository is a [`monorepo`](https://danluu.com/monorepo/).
+Well, before even starting to implement this approach, we need to understand that the `create-react-app` Git repository is a [_monorepo_](https://danluu.com/monorepo/).
 
 That means it's team decided to include most of the packages, built in favor of creating the `create-react-app` module, in the same Git repository.
 
@@ -43,7 +47,7 @@ We'll find a [`packages/`](https://github.com/facebookincubator/create-react-app
 
 ![Brainfuck](http://68.media.tumblr.com/24c7ca937ecdf0a8df4d0586cdcd4dfa/tumblr_nryoikgZtF1uni7lmo2_r2_400.gif){:.is-centered}
 
-> You can learn more about _monorepos_ management at [lerna](https://github.com/lerna/lerna).
+> You can learn more about monorepos management at [lerna](https://github.com/lerna/lerna).
 
 So, in order to make changes to `react-scripts` and publishing to a new `npm` package, we first need to fork `create-react-app`.
 
@@ -51,15 +55,19 @@ My own fork can be found at [`aaccurso-react-scripts`](https://github.com/aaccur
 
 ### Modify react-scripts
 
-One of the most important things I wanted to change in the default Webpack configuration was to allow [import of modules relative to the `src/` directory](https://github.com/aaccurso/create-react-app/commit/f31e9c8db2988e8722396ceabc22012f51c0d19a).
+One of the most important things I wanted to change in the default Webpack configuration was to allow __import of modules relative to the `src/` directory__.
 
 Let's say we are working in a component `Foo` located deep in the `src/` directory structure and we want to use `Bar` which is way up in the directory hierarchy.
 
 {% gist aaccurso/38b9c3a6a5f62e74e221c04e752bf69f %}
 
-By configuring Webpack to search for modules relative to `src/` we can get rid of the nasty `../../../../` in the import path.
+By configuring Webpack to search for modules relative to `src/`, we can get rid of the nasty `../../../../` in the import path.
 
-There are other reasons for having to modify `react-scripts` like having [support for SASS](https://github.com/aaccurso/create-react-app/commit/e7a9707d85bd88a3f460e5b62661357e331fccae) or integrating a library like PIXI.js. I'd love to hear more examples in the comments section.
+You can find out how to do it in [this commit](https://github.com/aaccurso/create-react-app/commit/f31e9c8db2988e8722396ceabc22012f51c0d19a).
+
+There are other reasons for having to modify `react-scripts` like __supporting SASS__ ([implemented in this commit](https://github.com/aaccurso/create-react-app/commit/e7a9707d85bd88a3f460e5b62661357e331fccae)) or integrating a library like PIXI.js.
+
+I'd love to hear more examples in the comments section.
 
 ### Publish to npm
 
@@ -77,7 +85,7 @@ To get notified of changes in the base repository of our fork we can use [backst
 
 This tool will __create and maintain a PR on our fork__ whenever there are new changes in the base repository.
 
-Then we can decide when and how to include those changes in our fork and by doing that, we'd be upgrading to the latest version or `react-scripts`.
+Then we can decide how and when to include those changes in our fork and by doing that, we'd be upgrading to the latest version or `react-scripts`.
 
 ## My React App
 
@@ -99,7 +107,7 @@ To do that, we'll have to `cd` into `my-react-scripts-fork` directory and [`npm 
 
 Then we'll `cd` into `my-react-app` and `npm link my-react-scripts-fork`.
 
-This is very useful when we are testing a new configuration, but we need to __remember to release and publish when we get the job done!__
+This is very useful when we are testing a new configuration, but you need to __remember to release and publish when you get the job done!__
 
 ## Conclusion
 
