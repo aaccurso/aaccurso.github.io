@@ -60,7 +60,7 @@ _Is it London? No, but quite_{:.is-centered}
 
 The most challenging trip of my life.
 
-Together with 5 more friends, we walked the **4-day Inca Trail to Machupichu**.
+Together with 5 friends, we hiked through the **4-day Inca Trail to Machupichu**.
 
 ![Machupichu, Perú](https://fb-s-b-a.akamaihd.net/h-ak-xta1/v/t1.0-9/14980772_1574808875871197_7731473607306592744_n.jpg?oh=16400aff31214088b42e2ab01d683276&oe=598F54BA&__gda__=1501431888_40818ee4fe3028e28bded434d23528e8){:title="Machupichu, Perú"}
 _Breathtaking, right?_{:.is-centered}
