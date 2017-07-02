@@ -107,7 +107,7 @@ To do that, we'll have to `cd` into `my-react-scripts-fork` directory and [`npm 
 
 Then we'll `cd` into `my-react-app` and `npm link my-react-scripts-fork`.
 
-This is very useful when we are testing a new configuration, but you need to __remember to release and publish when you get the job done!__
+This is very useful when we are testing a new configuration, but you need to __remember to release and publish when you get the job done__ so the rest of your team can pull the changes.
 
 ## Conclusion
 
