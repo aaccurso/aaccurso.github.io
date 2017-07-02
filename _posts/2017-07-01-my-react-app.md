@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My React App"
-date:   2017-02-18 15:34:03
+date:   2017-07-01 15:34:03
 description: >
   How to configure your create-react-app application without ejecting.
 categories: react create-react-app react-scripts
@@ -12,6 +12,8 @@ After working half a year with React and it's ecosystem, I though it was a good 
 These are mostly related with __custom build configuration and improvements__ over the default configurations that we get while using popular tooling.
 
 ## Create React App
+
+![react](https://www.gitbook.com/cover/book/mongkuen/react.jpg?build=1470682429235){:style="width: 200px" .is-centered}
 
 On my first important project with React I decided to start off using the popular [`create-react-app`](https://github.com/facebookincubator/create-react-app) module, which let's us create react apps with no build configuration.
 
