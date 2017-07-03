@@ -23,7 +23,7 @@ At that moment, to integrate a library like [PIXI.js](http://www.pixijs.com) we 
 
 {% gist mjackson/ecd3914ebee934f4daf4 %}
 
-> Luckily, PIXI community figured out how to import the library as a ES6 module [in v4.1.1](https://github.com/pixijs/pixi.js/pull/2981) so we don't need to have a special configuration anymore.
+> Luckily, the PIXI community figured out how to import the library as a ES6 module [in v4.1.1](https://github.com/pixijs/pixi.js/pull/2981) so we don't need to have a special configuration anymore.
 
 Ejecting from a Create React App means that we won't be able to upgrade [`react-scripts`](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#updating-to-new-releases) (the module that contains the build configuration) whenever the community releases a new version.
 
