@@ -53,6 +53,8 @@ So, in order to make changes to `react-scripts` and publishing to a new `npm` pa
 
 My own fork can be found at [`aaccurso-react-scripts`](https://github.com/aaccurso/create-react-app/tree/master/packages/react-scripts).
 
+{% include github-repo-card.html name="create-react-app" %}
+
 ### Modify react-scripts
 
 One of the most important things I wanted to change in the default Webpack configuration was to allow __import of modules relative to the `src/` directory__.
@@ -95,7 +97,9 @@ If it's an already created project, we just need to `npm uninstall react-scripts
 
 For new projects, we need to `create-react-app my-react-app --scripts-version my-react-scripts-fork`.
 
-You can take a look at [my-react-app](https://github.com/aaccurso/my-react-app) which already uses `aaccurso-react-scripts`.
+You can take a look at `my-react-app` which already uses `aaccurso-react-scripts`.
+
+{% include github-repo-card.html name="my-react-app" %}
 
 Quite easy!
 
