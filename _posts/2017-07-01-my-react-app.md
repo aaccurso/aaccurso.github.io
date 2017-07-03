@@ -7,7 +7,7 @@ description: >
 categories: react create-react-app react-scripts
 ---
 
-After working half a year with React and it's ecosystem, I though it was a good moment to analyze the things I'd like to take into account on future React projects.
+After working half a year with React and it's ecosystem, I thought it was a good moment to analyze the things I'd like to take into account on future React projects.
 
 These are mostly related with __custom build configuration and improvements__ over the default configurations that we get while using popular tooling.
 
