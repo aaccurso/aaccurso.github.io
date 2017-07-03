@@ -51,7 +51,7 @@ We'll find a [`packages/`](https://github.com/facebookincubator/create-react-app
 
 So, in order to make changes to `react-scripts` and publishing to a new `npm` package, we first need to fork `create-react-app`.
 
-My own fork can be found at [`aaccurso-react-scripts`](https://github.com/aaccurso/create-react-app/tree/master/packages/react-scripts).
+My own fork, and specifically the custom `react-scripts` module, can be found at [`aaccurso-react-scripts`](https://github.com/aaccurso/create-react-app/tree/master/packages/react-scripts).
 
 {% include github-repo-card.html name="create-react-app" %}
 
@@ -78,6 +78,8 @@ Now that we have the changes in place, we need to publish them in a new `npm` pa
 In order to do that, we'll have to [rename the `packages/react-scripts/package.json`](https://github.com/aaccurso/create-react-app/commit/e976227658139544ed8c525769e9fb85a43ce3ec) package name, let's say to `my-react-scripts-fork`.
 
 Then we'll `npm publish` and that's it, we have a brand new `npm` package.
+
+For instance, my custom `aaccurso-react-scripts` package can be found [here](https://www.npmjs.com/package/aaccurso-react-scripts).
 
 > The scope of this post doesn't include topics such as _release management_ or maintaing a fork of another project. However, you can find more information about this in the [npm docs](https://docs.npmjs.com/getting-started/publishing-npm-packages).
 
