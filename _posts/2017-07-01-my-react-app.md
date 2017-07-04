@@ -27,7 +27,7 @@ At that moment, to integrate a library like [PIXI.js](http://www.pixijs.com) we 
 
 Ejecting from a Create React App means that we won't be able to upgrade [`react-scripts`](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#updating-to-new-releases) (the module that contains the build configuration) whenever the community releases a new version.
 
-And this is really important in order to __stay up to date with the latest releases__ of each dependency and with build configuration updates, which believe me, we want to do in our projects since each release includes important bug fixes and improvements.
+And this is really important in order to __stay up to date with the latest releases__ of each dependency and build configuration updates, which believe me, we want to have in our projects since each release includes important bug fixes and improvements.
 
 So, what's the alternative to ejecting?
 
@@ -67,7 +67,7 @@ By configuring Webpack to search for modules relative to `src/`, we can get rid 
 
 You can find out how to do it in [this commit](https://github.com/aaccurso/create-react-app/commit/f31e9c8db2988e8722396ceabc22012f51c0d19a).
 
-There are other reasons for having to modify `react-scripts` like __supporting SASS__ ([implemented in this commit](https://github.com/aaccurso/create-react-app/commit/e7a9707d85bd88a3f460e5b62661357e331fccae)) or integrating a library like PIXI.js.
+There are other reasons for having to modify `react-scripts`, like __supporting SASS__ ([implemented in this commit](https://github.com/aaccurso/create-react-app/commit/e7a9707d85bd88a3f460e5b62661357e331fccae)) or integrating a library like PIXI.js.
 
 I'd love to hear more examples in the comments section.
 
@@ -81,7 +81,7 @@ Then we'll `npm publish` and that's it, we have a brand new `npm` package.
 
 For instance, my custom `aaccurso-react-scripts` package can be found [here](https://www.npmjs.com/package/aaccurso-react-scripts).
 
-> The scope of this post doesn't include topics such as _release management_ or maintaing a fork of another project. However, you can find more information about this in the [npm docs](https://docs.npmjs.com/getting-started/publishing-npm-packages).
+> The scope of this post doesn't include topics such as release management of `npm` packages. However, you can find more information about this in the [npm docs](https://docs.npmjs.com/getting-started/publishing-npm-packages).
 
 ### Upgrade react-scripts
 
@@ -89,17 +89,17 @@ To get notified of changes in the base repository of our fork we can use [backst
 
 This tool will __create and maintain a PR on our fork__ whenever there are new changes in the base repository.
 
-Then we can decide how and when to include those changes in our fork and by doing that, we'd be upgrading to the latest version or `react-scripts`.
+Then we can decide how and when to include those changes in our fork, and by doing that we'd be upgrading to the latest version of the base `react-scripts`.
 
 ## My React App
 
-Now that we have our own custom `react-scripts`, how do we use them in our project?
+Now that we have our own custom `my-react-scripts-fork`, how do we use it in our project?
 
-If it's an already created project, we just need to `npm uninstall react-scripts` and then `npm install my-react-scripts-fork`.
+If it's a project we already created, we just need to `npm uninstall --save-dev react-scripts` and then `npm install --save-dev my-react-scripts-fork`.
 
 For new projects, we need to `create-react-app my-react-app --scripts-version my-react-scripts-fork`.
 
-You can take a look at `my-react-app` which already uses `aaccurso-react-scripts`.
+You can take a look at `my-react-app` which is using `aaccurso-react-scripts`.
 
 {% include github-repo-card.html name="my-react-app" %}
 
@@ -113,7 +113,7 @@ To do that, we'll have to `cd` into `my-react-scripts-fork` directory and [`npm 
 
 Then we'll `cd` into `my-react-app` and `npm link my-react-scripts-fork`.
 
-This is very useful when we are testing a new configuration, but you need to __remember to release and publish when you get the job done__ so the rest of your team can pull the changes.
+This is very useful when we are testing a new configuration, but you have to __remember to release and publish when you get the job done__ so the rest of your team can pull the changes.
 
 ## Conclusion
 
@@ -128,5 +128,3 @@ Which will mean more effort while merging our custom `react-scripts` to a new ma
 That's why a __complete Git commit history and changelog__ are important to help us in these matters.
 
 I hope this helps you on your own projects.
-
-Please leave any comment or suggestion below :D
