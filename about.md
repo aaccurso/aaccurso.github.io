@@ -4,7 +4,15 @@ title: About Me
 permalink: /about-me/
 ---
 
-![Puerto Madero, Buenos Aires](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Buenos_Aires%2C_Puerto_Madero.jpg/1104px-Buenos_Aires%2C_Puerto_Madero.jpg){:title="Puerto Madero, Buenos Aires"}
+I was born in Buenos Aires, Argentina – where I'm currently living.
+
+I like building things, but what I enjoy the most is leading people towards a common goal and the feeling of fulfillment that comes after accomplishing it.
+
+I'm a Software Engineer, the kind that has Star Wars bobble head figures on his desk and a Batman vinyl sticker on his laptop :D
+
+Continue reading to know more about me!
+
+![Puerto Madero, Buenos Aires](/assets/about-me/buenos-aires.jpg){:title="Puerto Madero, Buenos Aires"}
 
 ## Traveling
 
