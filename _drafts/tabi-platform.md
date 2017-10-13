@@ -7,12 +7,12 @@ categories: project gaming tabi node.js angular.js sails.js
 
 ## WIP
 
-Web Application.
+Web Application (SPA).
 Dashboard.
 Collect game data.
 Group, map and reduce data.
 Communication between teachers and parents.
 Realtime notifications.
 
-API: Node.js, Sails.js, Socket.io, Mongodb, Mocha.
-Front: Angular.js 1.x, Bootstrap, SASS, gulp, e2e.
+API: Node.js, Sails.js, Socket.io, MongoDB, Mocha.
+Front: Angular.js 1.x, Bootstrap, SASS, gulp, e2e (Protractor, Jasmine and Selenium).
