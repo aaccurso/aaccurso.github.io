@@ -13,7 +13,7 @@ These are mostly related with __custom build configuration and improvements__ ov
 
 ## Create React App
 
-![react](https://www.gitbook.com/cover/book/mongkuen/react.jpg?build=1470682429235){:style="width: 200px" .is-centered}
+![react]({{ site.url }}/assets/react.svg){:style="width: 200px" .is-centered}
 
 On my first important project with React I decided to start off using the popular [`create-react-app`](https://github.com/facebookincubator/create-react-app) module, which let's us create react apps with no build configuration.
 
