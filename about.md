@@ -42,7 +42,7 @@ _The beautiful Chicago River_{:.is-centered}
 
 ### New York, USA
 
-And after that I travelled to NYC on 3 ocassions (again work related trips), the first and third times during summer and the second during winter.
+And after that I travelled to NYC on 4 ocassions (again work related trips), two times during summer and the other two during winter.
 
 On these trips I stayed around 3 weeks, and I saw it as a great opportunity to visit other cities which were close.
 
