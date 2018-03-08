@@ -108,6 +108,8 @@ It may not be Barça, but Independiente has it's handful of international cups a
 
 I believe in contributing to the Open Source community.
 
+![GitHub Contributions Chart](https://ghchart.rshah.org/307DDF/aaccurso)
+
 Here are a few examples of projects I open sourced.
 
 {% include github-repo-card.html name="phaser-state-transition-plugin" %}
