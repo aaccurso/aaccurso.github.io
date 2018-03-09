@@ -228,6 +228,10 @@ img.icon {
   width: 20px;
 }
 
+/**
+* Site Title
+*/
+
 .site-title {
   display: flex;
 
@@ -235,11 +239,11 @@ img.icon {
     align-self: center;
     margin-right: 10px;
     height: 40px;
+    transition: filter .25s;
 
     img {
       border-radius: 50%;
       display: block;
-      transition: filter .5s;
     }
   }
 
@@ -250,9 +254,11 @@ img.icon {
   }
 
   &:hover {
-    img {
+    .avatar {
       filter: grayscale(1);
     }
+
+    text-decoration: none;
   }
 }
 
