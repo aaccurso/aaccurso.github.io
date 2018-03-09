@@ -102,13 +102,13 @@ In Argentina, I support Independiente, still known as _El Rey de Copas_.
 
 It may not be Barça, but Independiente has it's handful of international cups and a very rich history.
 
-[![Independiente](https://upload.wikimedia.org/wikipedia/commons/d/db/Escudo_del_Club_Atl%C3%A9tico_Independiente.svg){:width="100px" .is-centered}](https://g.co/kgs/ZAs9vj){:target="_blank"}
+[![Independiente](https://upload.wikimedia.org/wikipedia/commons/d/db/Escudo_del_Club_Atl%C3%A9tico_Independiente.svg){:width="100px" .is-centered}](https://g.co/kgs/ZAs9vj){:target="noopener"}
 
 ## Open Source
 
 I believe in contributing to the Open Source community.
 
-[![GitHub Contributions Chart](https://ghchart.rshah.org/307DDF/aaccurso)](https://github.com/{{ site.github_username }}){:target="_blank"}
+[![GitHub Contributions Chart](https://ghchart.rshah.org/307DDF/aaccurso)](https://github.com/{{ site.github_username }}){:target="noopener"}
 
 Here are a few examples of projects I open sourced.
 
