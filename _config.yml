@@ -2,7 +2,7 @@
 title: Alan Accurso
 email: accurso.alan@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Software Engineer.
+  Software Engineer
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://aaccurso.me" # the base hostname & protocol for your site
 twitter_username: aaaccurso
