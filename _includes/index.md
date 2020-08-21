@@ -2,7 +2,8 @@
 
 I live in _Buenos Aires, Argentina_.
 
-I'm a [Software Engineer][Linkedin]{:.icon-linkedin target="noopener"} and I usually spend time [coding][Github]{:.icon-github target="noopener"}, leading teams, participating in meetings and [meetups][Meetup]{:.icon-meetup target="noopener"}, learning, [teaching][frontend-training]{:target="noopener"}, interviewing, coaching &amp; mentoring.
+I'm a [Software Engineer][Linkedin]{:.icon-linkedin target="noopener"} and I usually spend time [coding][Github]{:.icon-github target="noopener"}, leading teams,  learning, [teaching][frontend-training]{:target="noopener"},
+coaching &amp; mentoring.
 
 I also like [reading][Goodreads]{:.icon-book-open target="noopener"}, [writing][blog]{:.icon-feather}, playing the [keyboards][SoundCloud]{:.icon-soundcloud target="noopener"} and soccer, among [other things][about-me].
 
@@ -12,7 +13,6 @@ I'd love to chat with you!
 
 [Linkedin]: https://www.linkedin.com/in/aaccurso
 [Github]: http://github.com/aaccurso
-[Meetup]: https://www.meetup.com/members/139833012
 [frontend-training]: https://graion.github.io/frontend-training/
 [Goodreads]: https://www.goodreads.com/user/show/31983601-alan-accurso
 [Twitter]: https://twitter.com/aaaccurso
