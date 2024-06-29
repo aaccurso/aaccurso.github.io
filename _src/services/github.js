@@ -4,7 +4,7 @@ service.register('Github', () => {
   const github = {
     api: 'https://api.github.com',
     user: 'aaccurso',
-    token: 'dcf74b88a1513ec5220e388b51d761055fb2c63e'
+    token: window.github_token || ''
   };
   const headers = new Headers({
     'Authorization': `token ${github.token}`,
